@@ -1,0 +1,11 @@
+\babel@toc {ngerman}{}\relax 
+\contentsline {section}{Einleitung}{2}{section*.2}%
+\contentsline {section}{Theorie}{2}{section*.3}%
+\contentsline {section}{Aufgabe 1}{2}{section*.4}%
+\contentsline {subsection}{Durchführung}{2}{section*.5}%
+\contentsline {subsection}{Auswertung \& Diskussion}{2}{section*.7}%
+\contentsline {section}{Aufgabe 2}{3}{section*.9}%
+\contentsline {subsection}{Durchführung}{3}{section*.10}%
+\contentsline {subsection}{Auswertung \& Diskussion}{3}{section*.11}%
+\contentsline {section}{Fazit}{3}{section*.12}%
+\contentsline {section}{Anhang}{3}{section*.13}%

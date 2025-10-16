@@ -1,0 +1,55 @@
+% $ biblatex auxiliary file $
+% $ biblatex bbl format version 3.2 $
+% Do not modify the above lines!
+%
+% This is an auxiliary file used by the 'biblatex' package.
+% This file may safely be deleted. It will be recreated by
+% biber as required.
+%
+\begingroup
+\makeatletter
+\@ifundefined{ver@biblatex.sty}
+  {\@latex@error
+     {Missing 'biblatex' package}
+     {The bibliography requires the 'biblatex' package.}
+      \aftergroup\endinput}
+  {}
+\endgroup
+
+
+\refsection{0}
+  \datalist[entry]{nty/global//global/global}
+    \entry{Oszillograph}{online}{}
+      \name{author}{1}{}{%
+        {{hash=2cc8a89c78dc321a526ac5385e727d26}{%
+           family={Ltd.},
+           familyi={L\bibinitperiod},
+           given={Good\bibnamedelimb Will\bibnamedelimb Instrument\bibnamedelima Co.},
+           giveni={G\bibinitperiod\bibinitdelim W\bibinitperiod\bibinitdelim I\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+      }
+      \strng{namehash}{2cc8a89c78dc321a526ac5385e727d26}
+      \strng{fullhash}{2cc8a89c78dc321a526ac5385e727d26}
+      \strng{bibnamehash}{2cc8a89c78dc321a526ac5385e727d26}
+      \strng{authorbibnamehash}{2cc8a89c78dc321a526ac5385e727d26}
+      \strng{authornamehash}{2cc8a89c78dc321a526ac5385e727d26}
+      \strng{authorfullhash}{2cc8a89c78dc321a526ac5385e727d26}
+      \field{sortinit}{L}
+      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{GDS‐1000A‐U Specifications}
+      \field{urlday}{20}
+      \field{urlmonth}{8}
+      \field{urlyear}{2025}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.gwinstek.com/en-GB/products/downloadSeriesSpec/18
+      \endverb
+      \verb{url}
+      \verb https://www.gwinstek.com/en-GB/products/downloadSeriesSpec/18
+      \endverb
+    \endentry
+  \enddatalist
+\endrefsection
+\endinput
+
