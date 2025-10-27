@@ -2361,7 +2361,17 @@
     <bcf:datasource type="file" datatype="bibtex">references.bib</bcf:datasource>
   </bcf:bibdata>
   <bcf:section number="0">
-    <bcf:citekey order="1" intorder="1">Oszillograph</bcf:citekey>
+    <bcf:citekey order="1" intorder="1">P401_Praktikumsanleitung</bcf:citekey>
+    <bcf:citekey order="2" intorder="1">Zeemann-Effekt_LD-Handblätter</bcf:citekey>
+    <bcf:citekey order="3" intorder="1">Zeemann-Effekt_LD-Handblätter</bcf:citekey>
+    <bcf:citekey order="4" intorder="1">Zeemann-Effekt_LD-Handblätter</bcf:citekey>
+    <bcf:citekey order="5" intorder="1">Zeemann-Effekt_LD-Handblätter</bcf:citekey>
+    <bcf:citekey order="6" intorder="1">Zeemann-Effekt_LD-Handblätter</bcf:citekey>
+    <bcf:citekey order="7" intorder="1">Zeemann-Effekt_LD-Handblätter</bcf:citekey>
+    <bcf:citekey order="8" intorder="1">Hertz_Termschema_Hg-Abb</bcf:citekey>
+    <bcf:citekey order="9" intorder="1">Hertz_Termschema_Hg-Abb</bcf:citekey>
+    <bcf:citekey order="10" intorder="1">Hertz_Wirkungsquerschnitt-Abb</bcf:citekey>
+    <bcf:citekey order="11" intorder="1">Hertz_Wirkungsquerschnitt-Abb</bcf:citekey>
   </bcf:section>
   <!-- SORTING TEMPLATES -->
   <bcf:sortingtemplate name="nty">

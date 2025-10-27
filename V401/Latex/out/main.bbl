@@ -19,34 +19,92 @@
 
 \refsection{0}
   \datalist[entry]{nty/global//global/global}
-    \entry{Oszillograph}{online}{}
+    \entry{Zeemann-Effekt_LD-Handblätter}{online}{}
       \name{author}{1}{}{%
-        {{hash=2cc8a89c78dc321a526ac5385e727d26}{%
-           family={Ltd.},
-           familyi={L\bibinitperiod},
-           given={Good\bibnamedelimb Will\bibnamedelimb Instrument\bibnamedelima Co.},
-           giveni={G\bibinitperiod\bibinitdelim W\bibinitperiod\bibinitdelim I\bibinitperiod\bibinitdelim C\bibinitperiod}}}%
+        {{hash=38474021707cc4e8a97648a4b17bc18a}{%
+           family={GmbH},
+           familyi={G\bibinitperiod},
+           given={LD\bibnamedelima Didactic},
+           giveni={L\bibinitperiod\bibinitdelim D\bibinitperiod}}}%
       }
-      \strng{namehash}{2cc8a89c78dc321a526ac5385e727d26}
-      \strng{fullhash}{2cc8a89c78dc321a526ac5385e727d26}
-      \strng{bibnamehash}{2cc8a89c78dc321a526ac5385e727d26}
-      \strng{authorbibnamehash}{2cc8a89c78dc321a526ac5385e727d26}
-      \strng{authornamehash}{2cc8a89c78dc321a526ac5385e727d26}
-      \strng{authorfullhash}{2cc8a89c78dc321a526ac5385e727d26}
-      \field{sortinit}{L}
-      \field{sortinithash}{7c47d417cecb1f4bd38d1825c427a61a}
+      \strng{namehash}{38474021707cc4e8a97648a4b17bc18a}
+      \strng{fullhash}{38474021707cc4e8a97648a4b17bc18a}
+      \strng{bibnamehash}{38474021707cc4e8a97648a4b17bc18a}
+      \strng{authorbibnamehash}{38474021707cc4e8a97648a4b17bc18a}
+      \strng{authornamehash}{38474021707cc4e8a97648a4b17bc18a}
+      \strng{authorfullhash}{38474021707cc4e8a97648a4b17bc18a}
+      \field{sortinit}{G}
+      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
-      \field{title}{GDS‐1000A‐U Specifications}
-      \field{urlday}{20}
-      \field{urlmonth}{8}
+      \field{journaltitle}{LD Handblätter Physik}
+      \field{title}{Spektroskopie mit einem Fabry-Perot-Etalon}
+      \field{urlday}{26}
+      \field{urlmonth}{10}
+      \field{urlyear}{2025}
+      \field{volume}{P6.2.7.3}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.ld-didactic.de/documents/de-DE/EXP/P/P6/P6273_d.pdf
+      \endverb
+      \verb{url}
+      \verb https://www.ld-didactic.de/documents/de-DE/EXP/P/P6/P6273_d.pdf
+      \endverb
+    \endentry
+    \entry{Hertz_Termschema_Hg-Abb}{book}{}
+      \name{author}{1}{}{%
+        {{hash=ba597e3ce62cd662428e8e4869f7b491}{%
+           family={Kuhn},
+           familyi={K\bibinitperiod}}}%
+      }
+      \strng{namehash}{ba597e3ce62cd662428e8e4869f7b491}
+      \strng{fullhash}{ba597e3ce62cd662428e8e4869f7b491}
+      \strng{bibnamehash}{ba597e3ce62cd662428e8e4869f7b491}
+      \strng{authorbibnamehash}{ba597e3ce62cd662428e8e4869f7b491}
+      \strng{authornamehash}{ba597e3ce62cd662428e8e4869f7b491}
+      \strng{authorfullhash}{ba597e3ce62cd662428e8e4869f7b491}
+      \field{sortinit}{K}
+      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Atomic Spectra}
+      \field{year}{1962}
+    \endentry
+    \entry{Hertz_Wirkungsquerschnitt-Abb}{article}{}
+      \name{author}{1}{}{%
+        {{hash=a3e4dbbf048e175c0e7026a2e835c636}{%
+           family={Moiseiwitsch},
+           familyi={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{a3e4dbbf048e175c0e7026a2e835c636}
+      \strng{fullhash}{a3e4dbbf048e175c0e7026a2e835c636}
+      \strng{bibnamehash}{a3e4dbbf048e175c0e7026a2e835c636}
+      \strng{authorbibnamehash}{a3e4dbbf048e175c0e7026a2e835c636}
+      \strng{authornamehash}{a3e4dbbf048e175c0e7026a2e835c636}
+      \strng{authorfullhash}{a3e4dbbf048e175c0e7026a2e835c636}
+      \field{sortinit}{M}
+      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{journaltitle}{Rev. Mod. Phys.}
+      \field{title}{Electron Impact on Excitation of Atoms}
+      \field{volume}{40}
+      \field{year}{1968}
+    \endentry
+    \entry{P401_Praktikumsanleitung}{online}{}
+      \field{sortinit}{P}
+      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
+      \field{labeltitlesource}{title}
+      \field{title}{P401 Elektronische Übergänge in Atomen}
+      \field{urlday}{26}
+      \field{urlmonth}{10}
       \field{urlyear}{2025}
       \field{urldateera}{ce}
       \verb{urlraw}
-      \verb https://www.gwinstek.com/en-GB/products/downloadSeriesSpec/18
+      \verb https://uni-bonn.sciebo.de/s/azE6754UkY23ABa
       \endverb
       \verb{url}
-      \verb https://www.gwinstek.com/en-GB/products/downloadSeriesSpec/18
+      \verb https://uni-bonn.sciebo.de/s/azE6754UkY23ABa
       \endverb
     \endentry
   \enddatalist

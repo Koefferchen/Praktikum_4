@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2025.10.15)  16 OCT 2025 19:25
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (TeX Live 2023) (preloaded format=pdflatex 2025.10.26)  26 OCT 2025 22:10
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -924,6 +924,8 @@ Package caption Info: End \AtBeginDocument code.
 
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
 (Font)              scaled to size 17.28pt on input line 18.
+LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
+(Font)              scaled to size 17.28pt on input line 18.
 LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
 (Font)              scaled to size 12.0pt on input line 18.
 LaTeX Font Info:    Trying to load font information for OT1+minntx on input line 18.
@@ -955,61 +957,131 @@ LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
 
  [1
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf.enc}] (./01_Einleitung.tex) (./02_Theorie.tex) (./03_aufgabe_1.tex
-LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
-(Font)              scaled to size 12.0pt on input line 4.
-<figs/V4_2e_emitter.jpg, id=62, 481.3182pt x 363.0363pt>
-File: figs/V4_2e_emitter.jpg Graphic file (type jpg)
-<use figs/V4_2e_emitter.jpg>
-Package pdftex.def Info: figs/V4_2e_emitter.jpg  used on input line 9.
-(pdftex.def)             Requested size: 204.85672pt x 154.51273pt.
-LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 9.0pt on input line 10.
-<figs/V4_2e_kaskode.jpg, id=63, 480.5955pt x 363.0363pt>
-File: figs/V4_2e_kaskode.jpg Graphic file (type jpg)
-<use figs/V4_2e_kaskode.jpg>
-Package pdftex.def Info: figs/V4_2e_kaskode.jpg  used on input line 14.
-(pdftex.def)             Requested size: 204.85672pt x 154.74539pt.
-File: figs/V4_2e_emitter.jpg Graphic file (type jpg)
-<use figs/V4_2e_emitter.jpg>
-Package pdftex.def Info: figs/V4_2e_emitter.jpg  used on input line 28.
-(pdftex.def)             Requested size: 204.85672pt x 154.51273pt.
-) (./04_aufgabe_2.tex
-LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 7.3pt on input line 12.
-LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
-(Font)              scaled to size 5.5pt on input line 12.
- [2{/usr/share/texlive/texmf-dist/fonts/enc/dvips/newtx/ntx-ot1-tlf.enc} <./figs/V4_2e_emitter.jpg> <./figs/V4_2e_kaskode.jpg>]) (./10_Fazit.tex) (./11_Anhang.tex)
-LaTeX Font Info:    Font shape `T1/ntxtlf/m/it' will be
-(Font)              scaled to size 10.0pt on input line 30.
-LaTeX Font Info:    Font shape `T1/ntxtlf/m/sc' will be
-(Font)              scaled to size 10.0pt on input line 30.
-LaTeX Font Info:    Trying to load font information for T1+ntxtt on input line 30.
- (/usr/share/texlive/texmf-dist/tex/latex/newtx/t1ntxtt.fd
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf.enc}{/usr/share/texlive/texmf-dist/fonts/enc/dvips/newtx/ntx-ot1-tlf.enc}] (./01_Einleitung.tex
+Underfull \hbox (badness 10000) in paragraph at lines 2--3
+
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 4--5
+
+ []
+
+LaTeX Font Info:    Trying to load font information for T1+ntxtt on input line 6.
+(/usr/share/texlive/texmf-dist/tex/latex/newtx/t1ntxtt.fd
 File: t1ntxtt.fd 2012/04/20 v3.1
 )
 LaTeX Font Info:    Font shape `T1/ntxtt/m/n' will be
-(Font)              scaled to size 10.0pt on input line 30.
- [3{/usr/share/texlive/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf-pc.enc}] (out/main.aux)
+(Font)              scaled to size 10.0pt on input line 6.
+) (./03_aufgabe_1.tex
+LaTeX Font Info:    Font shape `T1/ntxtlf/b/n' will be
+(Font)              scaled to size 12.0pt on input line 4.
+LaTeX Font Info:    Trying to load font information for TS1+ntxtlf on input line 6.
+ (/usr/share/texlive/texmf-dist/tex/latex/newtx/ts1ntxtlf.fd
+File: ts1ntxtlf.fd 2015/01/18 v1.0 fd file for TS1/ntxtlf
+)
+LaTeX Font Info:    Font shape `TS1/ntxtlf/m/n' will be
+(Font)              scaled to size 10.0pt on input line 6.
+<figs/Zeeman_Aufbau.png, id=90, 764.8575pt x 371.3875pt>
+File: figs/Zeeman_Aufbau.png Graphic file (type png)
+<use figs/Zeeman_Aufbau.png>
+Package pdftex.def Info: figs/Zeeman_Aufbau.png  used on input line 13.
+(pdftex.def)             Requested size: 332.89412pt x 161.64291pt.
+<figs/Zeeman_B-Feld.png, id=94, 582.175pt x 297.11pt>
+File: figs/Zeeman_B-Feld.png Graphic file (type png)
+<use figs/Zeeman_B-Feld.png>
+Package pdftex.def Info: figs/Zeeman_B-Feld.png  used on input line 32.
+(pdftex.def)             Requested size: 225.34708pt x 115.00198pt.
+LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
+(Font)              scaled to size 9.0pt on input line 33.
+<figs/Zeeman_Dipolstrahlung.png, id=95, 611.28375pt x 264.99pt>
+File: figs/Zeeman_Dipolstrahlung.png Graphic file (type png)
+<use figs/Zeeman_Dipolstrahlung.png>
+Package pdftex.def Info: figs/Zeeman_Dipolstrahlung.png  used on input line 37.
+(pdftex.def)             Requested size: 225.34708pt x 97.68489pt.
+ [2{/usr/share/texlive/texmf-dist/fonts/enc/dvips/tex-gyre/q-ts1.enc} <./figs/Zeeman_Aufbau.png>] [3 <./figs/Zeeman_B-Feld.png> <./figs/Zeeman_Dipolstrahlung.png>]
+<figs/Zeeman_Übergänge.png, id=117, 557.08125pt x 630.355pt>
+File: figs/Zeeman_Übergänge.png Graphic file (type png)
+<use figs/Zeeman_Übergänge.png>
+Package pdftex.def Info: figs/Zeeman_Übergänge.png  used on input line 95.
+(pdftex.def)             Requested size: 179.2555pt x 202.83345pt.
+) (./04_aufgabe_2.tex
+LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
+(Font)              scaled to size 7.3pt on input line 6.
+LaTeX Font Info:    Font shape `T1/ntxtlf/m/n' will be
+(Font)              scaled to size 5.5pt on input line 6.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 9.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `subscript' on input line 9.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 9.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 16.
+
+
+Package hyperref Warning: Token not allowed in a PDF string (Unicode):
+(hyperref)                removing `math shift' on input line 16.
+
+[4 <./figs/Zeeman_Übergänge.png>]
+<figs/Hertz_Termdiagramm_Hg.png, id=127, 594.22pt x 596.2275pt>
+File: figs/Hertz_Termdiagramm_Hg.png Graphic file (type png)
+<use figs/Hertz_Termdiagramm_Hg.png>
+Package pdftex.def Info: figs/Hertz_Termdiagramm_Hg.png  used on input line 37.
+(pdftex.def)             Requested size: 204.85672pt x 205.55315pt.
+<figs/Hertz_Wirkungsquerschnitte.png, id=130, 609.27625pt x 471.7625pt>
+File: figs/Hertz_Wirkungsquerschnitte.png Graphic file (type png)
+<use figs/Hertz_Wirkungsquerschnitte.png>
+Package pdftex.def Info: figs/Hertz_Wirkungsquerschnitte.png  used on input line 42.
+(pdftex.def)             Requested size: 230.46576pt x 178.45097pt.
+) (./10_Fazit.tex)
+LaTeX Font Info:    Font shape `T1/ntxtlf/m/it' will be
+(Font)              scaled to size 10.0pt on input line 28.
+LaTeX Font Info:    Font shape `T1/ntxtlf/m/sc' will be
+(Font)              scaled to size 10.0pt on input line 28.
+ [5{/usr/share/texlive/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf-pc.enc} <./figs/Hertz_Termdiagramm_Hg.png> <./figs/Hertz_Wirkungsquerschnitte.png>] (./11_Anhang.tex
+<figs/V4_2e_emitter.jpg, id=148, 481.3182pt x 363.0363pt>
+File: figs/V4_2e_emitter.jpg Graphic file (type jpg)
+<use figs/V4_2e_emitter.jpg>
+Package pdftex.def Info: figs/V4_2e_emitter.jpg  used on input line 8.
+(pdftex.def)             Requested size: 204.85672pt x 154.51273pt.
+<figs/V4_2e_kaskode.jpg, id=149, 480.5955pt x 363.0363pt>
+File: figs/V4_2e_kaskode.jpg Graphic file (type jpg)
+<use figs/V4_2e_kaskode.jpg>
+Package pdftex.def Info: figs/V4_2e_kaskode.jpg  used on input line 13.
+(pdftex.def)             Requested size: 204.85672pt x 154.74539pt.
+File: figs/V4_2e_emitter.jpg Graphic file (type jpg)
+<use figs/V4_2e_emitter.jpg>
+Package pdftex.def Info: figs/V4_2e_emitter.jpg  used on input line 24.
+(pdftex.def)             Requested size: 204.85672pt x 154.51273pt.
+) [6 <./figs/V4_2e_emitter.jpg> <./figs/V4_2e_kaskode.jpg>] (out/main.aux)
 Package rerunfilecheck Info: File `main.out' has not changed.
-(rerunfilecheck)             Checksum: C4EC693CB9989910C642F4CF76A3DCF8;1095.
+(rerunfilecheck)             Checksum: DB65AAF240625712A2980F41552B2B52;2364.
 Package logreq Info: Writing requests to 'main.run.xml'.
 \openout1 = `main.run.xml'.
 
  ) 
 Here is how much of TeX's memory you used:
- 28185 strings out of 476034
- 529518 string characters out of 5792863
- 1859388 words of memory out of 6000000
- 48242 multiletter control sequences out of 15000+600000
- 573505 words of font info for 101 fonts, out of 8000000 for 9000
+ 28298 strings out of 476034
+ 532379 string characters out of 5792863
+ 1861388 words of memory out of 6000000
+ 48323 multiletter control sequences out of 15000+600000
+ 581091 words of font info for 113 fonts, out of 8000000 for 9000
  1139 hyphenation exceptions out of 8191
- 88i,14n,134p,738b,2459s stack positions out of 10000i,1000n,20000p,200000b,200000s
-</usr/share/texlive/texmf-dist/fonts/type1/public/newtx/NewTXMI.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/t1xtt.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/txmiaX.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/txsys.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/ztmb.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/ztmr.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/ztmri.pfb>
-Output written on out/main.pdf (3 pages, 612651 bytes).
+ 88i,11n,134p,738b,2459s stack positions out of 10000i,1000n,20000p,200000b,200000s
+</usr/share/texlive/texmf-dist/fonts/type1/public/newtx/NewTXMI.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/NewTXMI7.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/tex-gyre/qtmr.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/t1xtt.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/txmiaX.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/txsys.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/ztmb.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/ztmr.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/newtx/ztmri.pfb>
+Output written on out/main.pdf (6 pages, 830527 bytes).
 PDF statistics:
- 135 PDF objects out of 1000 (max. 8388607)
- 110 compressed objects within 2 object streams
- 23 named destinations out of 1000 (max. 500000)
- 91 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 214 PDF objects out of 1000 (max. 8388607)
+ 165 compressed objects within 2 object streams
+ 36 named destinations out of 1000 (max. 500000)
+ 161 words of extra memory for PDF output out of 10000 (max. 10000000)
 
