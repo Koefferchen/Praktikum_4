@@ -130,3 +130,12 @@ def ultimate_plot():
 
 ultimate_plot()
 ultimate_plot()
+
+
+data_sigmas = np.loadtxt("../Data_Hertz/deltas.txt", skiprows=0)
+
+print(data_sigmas)
+
+total_delta, total_delta_err = stichproben_varianz(data_sigmas)
+
+print(total_delta, total_delta_err)
