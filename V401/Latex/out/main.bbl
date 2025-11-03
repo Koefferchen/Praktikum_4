@@ -18,7 +18,48 @@
 
 
 \refsection{0}
-  \datalist[entry]{nty/global//global/global}
+  \datalist[entry]{none/global//global/global}
+    \entry{P401_Praktikumsanleitung}{online}{}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labeltitlesource}{title}
+      \field{title}{P401 Elektronische Übergänge in Atomen}
+      \field{urlday}{26}
+      \field{urlmonth}{10}
+      \field{urlyear}{2025}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://uni-bonn.sciebo.de/s/azE6754UkY23ABa
+      \endverb
+      \verb{url}
+      \verb https://uni-bonn.sciebo.de/s/azE6754UkY23ABa
+      \endverb
+    \endentry
+    \entry{Demtröder_4}{book}{}
+      \name{author}{1}{}{%
+        {{hash=59654c899d48eff28a4d8063e886fb5f}{%
+           family={Demtröder},
+           familyi={D\bibinitperiod},
+           given={Wolfgang},
+           giveni={W\bibinitperiod}}}%
+      }
+      \strng{namehash}{59654c899d48eff28a4d8063e886fb5f}
+      \strng{fullhash}{59654c899d48eff28a4d8063e886fb5f}
+      \strng{bibnamehash}{59654c899d48eff28a4d8063e886fb5f}
+      \strng{authorbibnamehash}{59654c899d48eff28a4d8063e886fb5f}
+      \strng{authornamehash}{59654c899d48eff28a4d8063e886fb5f}
+      \strng{authorfullhash}{59654c899d48eff28a4d8063e886fb5f}
+      \field{extraname}{1}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Experimentalphysik 4}
+      \field{year}{2010}
+      \verb{doi}
+      \verb https://doi.org/10.1007/978-3-642-01598-4
+      \endverb
+    \endentry
     \entry{Zeemann-Effekt_LD-Handblätter}{online}{}
       \name{author}{1}{}{%
         {{hash=38474021707cc4e8a97648a4b17bc18a}{%
@@ -33,8 +74,8 @@
       \strng{authorbibnamehash}{38474021707cc4e8a97648a4b17bc18a}
       \strng{authornamehash}{38474021707cc4e8a97648a4b17bc18a}
       \strng{authorfullhash}{38474021707cc4e8a97648a4b17bc18a}
-      \field{sortinit}{G}
-      \field{sortinithash}{32d67eca0634bf53703493fb1090a2e8}
+      \field{sortinit}{3}
+      \field{sortinithash}{ad6fe7482ffbd7b9f99c9e8b5dccd3d7}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{LD Handblätter Physik}
@@ -51,6 +92,124 @@
       \verb https://www.ld-didactic.de/documents/de-DE/EXP/P/P6/P6273_d.pdf
       \endverb
     \endentry
+    \entry{Dor56}{book}{}
+      \name{author}{1}{}{%
+        {{hash=9fb3572a1e615256694c77a3964b4659}{%
+           family={Döring},
+           familyi={D\bibinitperiod},
+           given={Werner},
+           giveni={W\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Sammlung Göschen}%
+      }
+      \strng{namehash}{9fb3572a1e615256694c77a3964b4659}
+      \strng{fullhash}{9fb3572a1e615256694c77a3964b4659}
+      \strng{bibnamehash}{9fb3572a1e615256694c77a3964b4659}
+      \strng{authorbibnamehash}{9fb3572a1e615256694c77a3964b4659}
+      \strng{authornamehash}{9fb3572a1e615256694c77a3964b4659}
+      \strng{authorfullhash}{9fb3572a1e615256694c77a3964b4659}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Einführung in die Theoretische Physik}
+      \field{year}{1956}
+    \endentry
+    \entry{Dem17}{book}{}
+      \name{author}{1}{}{%
+        {{hash=59654c899d48eff28a4d8063e886fb5f}{%
+           family={Demtröder},
+           familyi={D\bibinitperiod},
+           given={Wolfgang},
+           giveni={W\bibinitperiod}}}%
+      }
+      \list{publisher}{1}{%
+        {Springer Spektrum}%
+      }
+      \strng{namehash}{59654c899d48eff28a4d8063e886fb5f}
+      \strng{fullhash}{59654c899d48eff28a4d8063e886fb5f}
+      \strng{bibnamehash}{59654c899d48eff28a4d8063e886fb5f}
+      \strng{authorbibnamehash}{59654c899d48eff28a4d8063e886fb5f}
+      \strng{authornamehash}{59654c899d48eff28a4d8063e886fb5f}
+      \strng{authorfullhash}{59654c899d48eff28a4d8063e886fb5f}
+      \field{extraname}{2}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Experimentalphysik 2: Elektrizität und Optik}
+      \field{year}{2017}
+      \field{pages}{299}
+      \range{pages}{1}
+    \endentry
+    \entry{Sch09}{book}{}
+      \name{author}{1}{}{%
+        {{hash=89354c67c41bb80f0d047ce5a9b6e411}{%
+           family={Scholz},
+           familyi={S\bibinitperiod},
+           given={M.},
+           giveni={M\bibinitperiod}}}%
+      }
+      \strng{namehash}{89354c67c41bb80f0d047ce5a9b6e411}
+      \strng{fullhash}{89354c67c41bb80f0d047ce5a9b6e411}
+      \strng{bibnamehash}{89354c67c41bb80f0d047ce5a9b6e411}
+      \strng{authorbibnamehash}{89354c67c41bb80f0d047ce5a9b6e411}
+      \strng{authornamehash}{89354c67c41bb80f0d047ce5a9b6e411}
+      \strng{authorfullhash}{89354c67c41bb80f0d047ce5a9b6e411}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Kleines Lehrbuch der Astronomie und Strophysik Band 15: Grundlagen der Sternspektroskopie}
+      \field{year}{2009}
+    \endentry
+    \entry{Leifi_Aufbau_Hertz}{online}{}
+      \field{sortinit}{1}
+      \field{sortinithash}{4f6aaa89bab872aa0999fec09ff8e98a}
+      \field{labeltitlesource}{title}
+      \field{title}{Franck-Hertz-Versuch mit Hg}
+      \field{urlday}{1}
+      \field{urlmonth}{11}
+      \field{urlyear}{2025}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://www.leifiphysik.de/atomphysik/atomarer-energieaustausch/versuche/franck-hertz-versuch-mit-hg
+      \endverb
+      \verb{url}
+      \verb https://www.leifiphysik.de/atomphysik/atomarer-energieaustausch/versuche/franck-hertz-versuch-mit-hg
+      \endverb
+    \endentry
+    \entry{NIST_Hg_Niveaus}{online}{}
+      \name{author}{1}{}{%
+        {{hash=83c572b47cd87af2da864eb379e14761}{%
+           family={Burns\bibnamedelimb et\bibnamedelima al.},
+           familyi={B\bibinitperiod\bibinitdelim e\bibinitperiod\bibinitdelim a\bibinitperiod},
+           prefix={k.},
+           prefixi={k\bibinitperiod}}}%
+      }
+      \strng{namehash}{83c572b47cd87af2da864eb379e14761}
+      \strng{fullhash}{83c572b47cd87af2da864eb379e14761}
+      \strng{bibnamehash}{83c572b47cd87af2da864eb379e14761}
+      \strng{authorbibnamehash}{83c572b47cd87af2da864eb379e14761}
+      \strng{authornamehash}{83c572b47cd87af2da864eb379e14761}
+      \strng{authorfullhash}{83c572b47cd87af2da864eb379e14761}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
+      \field{labelnamesource}{author}
+      \field{labeltitlesource}{title}
+      \field{title}{Energy Levels of Neutral Mercury (HG I)}
+      \field{urlday}{1}
+      \field{urlmonth}{11}
+      \field{urlyear}{2025}
+      \field{urldateera}{ce}
+      \verb{urlraw}
+      \verb https://physics.nist.gov/PhysRefData/Handbook/Tables/mercurytable5.htm
+      \endverb
+      \verb{url}
+      \verb https://physics.nist.gov/PhysRefData/Handbook/Tables/mercurytable5.htm
+      \endverb
+    \endentry
     \entry{Hertz_Termschema_Hg-Abb}{book}{}
       \name{author}{1}{}{%
         {{hash=ba597e3ce62cd662428e8e4869f7b491}{%
@@ -63,8 +222,8 @@
       \strng{authorbibnamehash}{ba597e3ce62cd662428e8e4869f7b491}
       \strng{authornamehash}{ba597e3ce62cd662428e8e4869f7b491}
       \strng{authorfullhash}{ba597e3ce62cd662428e8e4869f7b491}
-      \field{sortinit}{K}
-      \field{sortinithash}{c02bf6bff1c488450c352b40f5d853ab}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{title}{Atomic Spectra}
@@ -82,8 +241,8 @@
       \strng{authorbibnamehash}{a3e4dbbf048e175c0e7026a2e835c636}
       \strng{authornamehash}{a3e4dbbf048e175c0e7026a2e835c636}
       \strng{authorfullhash}{a3e4dbbf048e175c0e7026a2e835c636}
-      \field{sortinit}{M}
-      \field{sortinithash}{4625c616857f13d17ce56f7d4f97d451}
+      \field{sortinit}{2}
+      \field{sortinithash}{8b555b3791beccb63322c22f3320aa9a}
       \field{labelnamesource}{author}
       \field{labeltitlesource}{title}
       \field{journaltitle}{Rev. Mod. Phys.}
@@ -91,23 +250,8 @@
       \field{volume}{40}
       \field{year}{1968}
     \endentry
-    \entry{P401_Praktikumsanleitung}{online}{}
-      \field{sortinit}{P}
-      \field{sortinithash}{ff3bcf24f47321b42cb156c2cc8a8422}
-      \field{labeltitlesource}{title}
-      \field{title}{P401 Elektronische Übergänge in Atomen}
-      \field{urlday}{26}
-      \field{urlmonth}{10}
-      \field{urlyear}{2025}
-      \field{urldateera}{ce}
-      \verb{urlraw}
-      \verb https://uni-bonn.sciebo.de/s/azE6754UkY23ABa
-      \endverb
-      \verb{url}
-      \verb https://uni-bonn.sciebo.de/s/azE6754UkY23ABa
-      \endverb
-    \endentry
   \enddatalist
+  \missing{Spektroskopie mit einem Fabry-Perot-Etalon}
 \endrefsection
 \endinput
 

@@ -17,7 +17,10 @@
 \RequirePackage{newtxtext}
     % Math Font Style = Times New Roman
 \RequirePackage{newtxmath}                 
-
+    % Bold Symbols
+\RequirePackage{bm}
+    % makes captions bold
+\RequirePackage[labelfont=bf]{caption}
 
 
 
@@ -28,11 +31,11 @@
     % physics unit notation
 \RequirePackage{siunitx}   
 \sisetup{
-  per-mode=symbol,
-  separate-uncertainty=true,
-  round-mode=places,
-  round-precision=2,
-  locale = DE
+    per-mode=symbol,
+    separate-uncertainty=false,
+    round-integer-to-decimal = false,  
+    round-precision = -1,
+    locale = DE
 }             
         
 
@@ -48,7 +51,7 @@
     % quotation                  
 \RequirePackage[autostyle=true]{csquotes}
     % bibliography management
-\RequirePackage[backend=biber, style=numeric]{biblatex}   
+\RequirePackage[backend=biber, style=numeric, sorting=none]{biblatex}   
 
     
 
@@ -63,8 +66,10 @@
 \RequirePackage{subcaption}    
     % page settings
 \RequirePackage[a4paper, left=1.5cm, right=1.5cm, top=2.5cm]{geometry}
-           
-
+    % für Fließtext um Grafiken
+\RequirePackage{wrapfig}   
+    % Um Grafiken die über die Seite hinausragen richtig zu formatieren --> zB wrapfig
+\RequirePackage{needspace}
 
 
 % ------------------- Other --------------------- %
@@ -74,5 +79,5 @@
     % no indent after figures
 \setlength{\parindent}{0pt}
     % no numbering of headlines
-\setcounter{secnumdepth}{0}
+%\setcounter{secnumdepth}{0}
 

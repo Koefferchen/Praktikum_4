@@ -1,37 +1,177 @@
 \section{Anhang}
 
-   
+\subsection{Teil \uproman{1}: Zeeman-Effekt}
+
+\subsection{Teil \uproman{2}: Franck-Hertz-Versuch}
+
+    \textcolor{red}{ToDo: Seitenumbrüche fixen!}
 
     \begin{figure}[H]
         \centering
-        \begin{subfigure}{0.4\textwidth}
-            \includegraphics[width=\linewidth]{figs/V4_2e_emitter.jpg}
-            \caption{Linke Abbildung}
+        \begin{subfigure}{0.45\textwidth}
+            \includegraphics[width=\linewidth]{figs/U2_2V.jpg}
+            \caption{$U_2 = \SI{2.0 +- 0.1}{V}$, $T = \SI{165 +- 1}{\degree C}$}
         \end{subfigure}
-        \hspace{1cm}
-        \begin{subfigure}{0.4\textwidth}
-            \includegraphics[width=\linewidth]{figs/V4_2e_kaskode.jpg}
-            \caption{Rechte Abbildung}
-            \label{fig:frequ_kaskode}
+        \hspace{0.5cm}
+        \begin{subfigure}{0.45\textwidth}
+            \includegraphics[width=\linewidth]{figs/U2_2-5V.jpg}
+            \caption{$U_2 = \SI{2.5 +- 0.1}{V}$, $T = \SI{165 +- 1}{\degree C}$}
         \end{subfigure}
-        \caption{Gesamtabbildung}
+        \begin{subfigure}{0.45\textwidth}
+            \includegraphics[width=\linewidth]{figs/U2_3V.jpg}
+            \caption{$U_2 = \SI{3.0 +- 0.1}{V}$, $T = \SI{165 +- 1}{\degree C}$}
+        \end{subfigure}
+        \hspace{0.5cm}
+        \begin{subfigure}{0.45\textwidth}
+            \includegraphics[width=\linewidth]{figs/U2_3-5V.jpg}
+            \caption{$U_2 = \SI{3.5 +- 0.1}{V}$, $T = \SI{165 +- 1}{\degree C}$}
+        \end{subfigure}
+        \begin{subfigure}{0.45\textwidth}
+            \includegraphics[width=\linewidth]{figs/T_170.jpg}
+            \caption{$U_2 = \SI{2.0 +- 0.1}{V}$, $T = \SI{170 +- 1}{\degree C}$}
+        \end{subfigure}
+        \hspace{0.5cm}
+        \begin{subfigure}{0.45\textwidth}
+            \includegraphics[width=\linewidth]{figs/T_175.jpg}
+            \caption{$U_2 = \SI{2.0 +- 0.1}{V}$, $T = \SI{175 +- 1}{\degree C}$}
+        \end{subfigure}
+        \begin{subfigure}{0.45\textwidth}
+            \includegraphics[width=\linewidth]{figs/T_181.jpg}
+            \caption{$U_2 = \SI{2.0 +- 0.1}{V}$, $T = \SI{181 +- 1}{\degree C}$}
+        \end{subfigure}
+        \caption{Messdaten und Fit-Funktionen der Anodenstrom-Messung. }
+        \label{fig:Hertz_Daten+Fitfunktionen}
     \end{figure}
-
+    
+    
     \begin{figure}[H]
         \centering
-        \begin{minipage}{0.4\textwidth}
-            \centering
-            \includegraphics[width=\linewidth]{figs/V4_2e_emitter.jpg}
-            \caption{Abbildung neben Text}
-        \end{minipage} 
-        \hspace{1cm}
-        \begin{minipage}{0.4\textwidth}
-            Text neben Abbildung... 
-        \end{minipage}
+        \begin{subfigure}{0.4\textwidth}
+    \begin{tabular}{|c|c|c|c|} \hline
+        $\mu$ [$\unit{V}$] & $\sigma$ [$\unit{V}$] & $A$ [$\unit{V}$] & $\Delta x$ [$\unit{V}$] \\ \hline
+        $\num{11.51 +- 0.01}$ & $\num{0.93 +- 0.01}$ & $\num{0.47 +- 0.00}$ & $\num{4.67 +- 0.01}$   \\
+        $\num{16.18 +- 0.01}$ & $\num{0.83 +- 0.01}$ & $\num{1.31 +- 0.01}$ & $\num{4.85 +- 0.01}$   \\
+        $\num{21.03 +- 0.01}$ & $\num{0.83 +- 0.01}$ & $\num{2.62 +- 0.02}$ & $\num{4.92 +- 0.01}$   \\
+        $\num{25.96 +- 0.01}$ & $\num{0.86 +- 0.01}$ & $\num{4.35 +- 0.04}$ & $\num{4.96 +- 0.01}$   \\
+        $\num{30.92 +- 0.01}$ & $\num{0.93 +- 0.02}$ & $\num{6.48 +- 0.06}$ & $\num{5.01 +- 0.02}$   \\ 
+        $\num{35.93 +- 0.01}$ & $\num{1.02 +- 0.02}$ & $\num{9.34 +- 0.09}$ &  \fbox{$\num{4.88 +- 0.13}$} \\ \hline
+    \end{tabular}
+    \caption{$T = \SI{165 +- 1}{\degree C}$, $U_2 = \SI{2.0 +- 0.1}{V}$. }
+    \label{tab:Hertz_T165_U2}
+        \end{subfigure}
+        \hspace{0.5cm}
+        \begin{subfigure}{0.4\textwidth}
+    \begin{tabular}{|c|c|c|c|} \hline
+        $\mu$ [$\unit{V}$] & $\sigma$ [$\unit{V}$] & $A$ [$\unit{V}$] & $\Delta x$ [$\unit{V}$] \\ \hline
+        $\num{11.59 +- 0.00}$ & $\num{0.83 +- 0.00}$ & $\num{0.34 +- 0.00}$ & $\num{4.70 +- 0.01}$   \\
+        $\num{16.29 +- 0.00}$ & $\num{0.77 +- 0.01}$ & $\num{0.97 +- 0.01}$ & $\num{4.83 +- 0.01}$   \\
+        $\num{21.13 +- 0.01}$ & $\num{0.78 +- 0.01}$ & $\num{1.95 +- 0.02}$ & $\num{4.93 +- 0.01}$   \\
+        $\num{26.05 +- 0.01}$ & $\num{0.82 +- 0.01}$ & $\num{3.26 +- 0.03}$ & $\num{5.00 +- 0.01}$   \\
+        $\num{31.05 +- 0.01}$ & $\num{0.89 +- 0.02}$ & $\num{4.84 +- 0.04}$ & $\num{5.02 +- 0.01}$   \\
+        $\num{36.07 +- 0.01}$ & $\num{1.01 +- 0.02}$ & $\num{6.94 +- 0.06}$ & \fbox{$\num{4.90 +- 0.13}$} \\ \hline
+    \end{tabular}
+    \caption{$T = \SI{165 +- 1}{\degree C}$, $U_2 = \SI{2.5 +- 0.1}{V}$. }
+    \label{tab:Hertz_T165_U2-5}
+        \end{subfigure}
+        \begin{subfigure}{0.4\textwidth}
+    \begin{tabular}{|c|c|c|c|} \hline
+        $\mu$ [$\unit{V}$] & $\sigma$ [$\unit{V}$] & $A$ [$\unit{V}$] & $\Delta x$ [$\unit{V}$] \\ \hline
+        $\num{11.72 +- 0.00}$ & $\num{0.65 +- 0.00}$ & $\num{0.23 +- 0.00}$ & $\num{4.70 +- 0.01}$   \\
+        $\num{16.42 +- 0.00}$ & $\num{0.72 +- 0.00}$ & $\num{0.67 +- 0.01}$ & $\num{4.82 +- 0.01}$   \\
+        $\num{21.24 +- 0.01}$ & $\num{0.71 +- 0.01}$ & $\num{1.38 +- 0.01}$ & $\num{4.93 +- 0.01}$   \\
+        $\num{26.17 +- 0.01}$ & $\num{0.78 +- 0.01}$ & $\num{2.29 +- 0.02}$ & $\num{4.99 +- 0.01}$   \\
+        $\num{31.16 +- 0.01}$ & $\num{0.85 +- 0.01}$ & $\num{3.42 +- 0.03}$ & $\num{5.04 +- 0.01}$   \\
+        $\num{36.20 +- 0.01}$ & $\num{0.91 +- 0.02}$ & $\num{4.97 +- 0.05}$ & \fbox{$\num{4.90 +- 0.14}$ }\\ \hline
+    \end{tabular}
+    \caption{$T = \SI{165 +- 1}{\degree C}$, $U_2 = \SI{3.0 +- 0.1}{V}$. }
+    \label{tab:Hertz_T165_U3}
+        \end{subfigure}
+        \hspace{0.5cm}
+        \begin{subfigure}{0.4\textwidth}
+    \begin{tabular}{|c|c|c|c|} \hline
+        $\mu$ [$\unit{V}$] & $\sigma$ [$\unit{V}$] & $A$ [$\unit{V}$] & $\Delta x$ [$\unit{V}$] \\ \hline
+        $\num{11.71 +- 0.02}$ & $\num{0.50 +- 0.02}$ & $\num{0.06 +- 0.00}$ & $\num{4.80 +- 0.02}$   \\
+        $\num{16.51 +- 0.00}$ & $\num{0.64 +- 0.01}$ & $\num{0.39 +- 0.00}$ & $\num{4.80 +- 0.01}$   \\
+        $\num{21.31 +- 0.01}$ & $\num{0.63 +- 0.01}$ & $\num{0.87 +- 0.01}$ & $\num{4.97 +- 0.01}$   \\
+        $\num{26.28 +- 0.01}$ & $\num{0.71 +- 0.01}$ & $\num{1.44 +- 0.01}$ & $\num{5.01 +- 0.01}$   \\
+        $\num{31.29 +- 0.01}$ & $\num{0.78 +- 0.01}$ & $\num{2.17 +- 0.02}$ & $\num{5.04 +- 0.02}$   \\
+        $\num{36.33 +- 0.02}$ & $\num{0.88 +- 0.02}$ & $\num{3.15 +- 0.03}$ & \fbox{ $\num{4.92 +- 0.12}$ }\\ \hline
+    \end{tabular}
+    \caption{$T = \SI{165 +- 1}{\degree C}$, $U_2 = \SI{3.5 +- 0.1}{V}$. }
+    \label{tab:Hertz_T165_U3-5}
+        \end{subfigure}
+        \begin{subfigure}{0.4\textwidth}
+    \begin{tabular}{|c|c|c|c|} \hline
+        $\mu$ [$\unit{V}$] & $\sigma$ [$\unit{V}$] & $A$ [$\unit{V}$] & $\Delta x$ [$\unit{V}$] \\ \hline
+        $\num{11.54 +- 0.02}$ & $\num{0.76 +- 0.04}$ & $\num{0.38 +- 0.00}$ & $\num{4.74 +- 0.02}$   \\
+        $\num{16.27 +- 0.01}$ & $\num{0.82 +- 0.01}$ & $\num{1.01 +- 0.01}$ & $\num{4.76 +- 0.01}$   \\
+        $\num{21.03 +- 0.01}$ & $\num{0.83 +- 0.01}$ & $\num{2.03 +- 0.02}$ & $\num{4.91 +- 0.01}$   \\
+        $\num{25.94 +- 0.01}$ & $\num{0.85 +- 0.02}$ & $\num{3.40 +- 0.03}$ & $\num{4.92 +- 0.01}$   \\
+        $\num{30.86 +- 0.01}$ & $\num{0.92 +- 0.02}$ & $\num{5.03 +- 0.05}$ & $\num{5.00 +- 0.02}$   \\
+        $\num{35.86 +- 0.01}$ & $\num{0.97 +- 0.03}$ & $\num{7.04 +- 0.07}$ & \fbox{ $\num{4.87 +- 0.11}$ }\\ \hline
+    \end{tabular}
+    \caption{ $T = \SI{170 +- 1}{\degree C}$, $U_2 = \SI{2.0 +- 0.1}{V}$. }
+    \label{tab:Hertz_T170_U2}
+        \end{subfigure}
+        \hspace{0.5cm}
+        \begin{subfigure}{0.4\textwidth}
+    \begin{tabular}{|c|c|c|c|} \hline
+        $\mu$ [$\unit{V}$] & $\sigma$ [$\unit{V}$] & $A$ [$\unit{V}$] & $\Delta x$ [$\unit{V}$] \\ \hline
+        $\num{11.82 +- 0.05}$ & $\num{0.85 +- 0.06}$ & $\num{0.17 +- 0.00}$ & $\num{4.62 +- 0.05}$   \\
+        $\num{16.45 +- 0.01}$ & $\num{0.88 +- 0.01}$ & $\num{0.52 +- 0.00}$ & $\num{4.70 +- 0.01}$   \\
+        $\num{21.15 +- 0.01}$ & $\num{0.83 +- 0.01}$ & $\num{1.09 +- 0.01}$ & $\num{4.79 +- 0.01}$   \\
+        $\num{25.94 +- 0.01}$ & $\num{0.84 +- 0.01}$ & $\num{1.85 +- 0.02}$ & $\num{4.87 +- 0.01}$   \\
+        $\num{30.81 +- 0.01}$ & $\num{0.86 +- 0.01}$ & $\num{2.80 +- 0.02}$ & $\num{4.88 +- 0.02}$   \\
+        $\num{35.69 +- 0.02}$ & $\num{0.92 +- 0.02}$ & $\num{3.91 +- 0.03}$ & \fbox{$\num{4.77 +- 0.11}$}\\ \hline
+    \end{tabular}
+    \caption{ $T = \SI{175 +- 1}{\degree C}$, $U_2 = \SI{2.0 +- 0.1}{V}$. }
+    \label{tab:Hertz_T175_U2}
+        \end{subfigure}
+        \begin{subfigure}{0.4\textwidth}
+    \begin{tabular}{|c|c|c|c|} \hline
+        $\mu$ [$\unit{V}$] & $\sigma$ [$\unit{V}$] & $A$ [$\unit{V}$] & $\Delta x$ [$\unit{V}$] \\ \hline
+        $\num{11.91 +- 0.12}$ & $\num{0.95 +- 0.12}$ & $\num{0.17 +- 0.00}$ & $\num{4.54 +- 0.12}$   \\
+        $\num{16.45 +- 0.01}$ & $\num{0.86 +- 0.02}$ & $\num{0.51 +- 0.00}$ & $\num{4.71 +- 0.01}$   \\
+        $\num{21.16 +- 0.01}$ & $\num{0.88 +- 0.01}$ & $\num{1.03 +- 0.01}$ & $\num{4.81 +- 0.01}$   \\
+        $\num{25.97 +- 0.01}$ & $\num{0.83 +- 0.01}$ & $\num{1.78 +- 0.02}$ & $\num{4.84 +- 0.01}$   \\
+        $\num{30.81 +- 0.01}$ & $\num{0.84 +- 0.02}$ & $\num{2.67 +- 0.02}$ & $\num{4.89 +- 0.02}$   \\
+        $\num{35.70 +- 0.01}$ & $\num{0.92 +- 0.02}$ & $\num{3.73 +- 0.03}$ & \fbox{ $\num{4.76 +- 0.14}$}\\ \hline
+    \end{tabular}
+    \caption{$T = \SI{181 +- 1}{\degree C}$, $U_2 = \SI{2.0 +- 0.1}{V}$. }
+    \label{tab:Hertz_T181_U2}
+        \end{subfigure}
+        \caption{Jede Tabelle zeigt den gewonnenen Satz an Fitparametern für je eine Messreihe nach Gleichung \eqref{eq:Fitfunktion}, wobei $\Delta x \coloneqq \mu_{n+1}-\mu_n$ den Abstand benachbarter Maxima beschreibt und die hervorgehobene Zelle dem Mittel $\langle \Delta x \rangle$ enspricht.}
+        \label{tab:Hertz_Fitparameter}
     \end{figure}
 
 
-    \begin{align}
-        & f\sub{measured} = \SI{3.0 \pm 0.5}{\mega\hertz} \\
-        & f\sub{theory} = \SI{3.6(2)}{\mega\hertz} 
-    \end{align}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    

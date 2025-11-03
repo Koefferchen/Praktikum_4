@@ -1,30 +1,74 @@
 \section{Teil \uproman{1}: Zeeman-Effekt}
 
-
 \subsection{Aufbau}
-    \begin{itemize}
-        \item Justierung des Fabry-Perot-Etalon
-        \item Aufbau der optischen Bank
-        \item Strahlungsquelle \& Eigenschaften
-    \end{itemize}
+
+    Der Aufbau zur Messung des normalen Zeeman-Effekts (Abb.~\ref{fig:Zeeman_Aufbau}) besteht aus einem elektromagnetischen Dipol, welcher bei Zuführung des elektrischen Stroms $I$ im Inneren des Aufbaus ein magnetisches Feld $B(I)$ erzuegt. Mithilfe von Klammern$\up{(b)}$ wird zunächst die Cadmiumlampe$\up{(a)}$ zwischen den Pohlschuhen$\up{(c)}$ eingesteckt und mit einer Spannungsquelle verbunden, während die gegenpoligen Elektromagneten in Reihe an das Hochstrom-Netzgerät angeschlossen werden. Die Kondensorlinse$\up{(d)}$ $(f\sub{K} = \SI{150}{mm})$ fokussiert das Licht der Cadmiumlampe auf das Fabry-Perot-Etalon$\up{(e)}$ $(d = \SI{4}{mm};\quad n = \num{1.457};\quad R = \num{0.85})$, von wo die eingehende Strahlung Winkel- und Wellenlängen-abhängig in die Abbildungslinse$\up{(f)}$ $(f\sub{A} = \SI{150}{mm})$ gebrochen wird. Durch einen Interferenzfilter$\up{(g)}$ $(\langle \lambda \rangle = \SI{643.8(20)}{nm})$ werden alle Emissionslinien außerhalb des Bereichs von Interesse gefiltert, sodass ab Okular$\up{(h)}$ ein Interferenzmuster zum Übergang $^1 D_2 \rightarrow ^1 P_1$ beobachtet werden kann. \\
     
     \begin{figure}[H]
         \centering
         \includegraphics[width=0.65\linewidth]{figs/Zeeman_Aufbau.png}
         \caption{Aufbau in transversaler Konfiguration. \cite{Zeemann-Effekt_LD-Handblätter}}
+        \label{fig:Zeeman_Aufbau}
+    \end{figure}
+    
+    \begin{figure}[H]
+        \centering
+        \begin{minipage}{0.4\textwidth}
+            \centering
+            \includegraphics[width=\linewidth]{figs/Zeeman_Etalon.png}
+            \caption{Schema des Fabry-Perot-Etalons. \cite{Zeemann-Effekt_LD-Handblätter}}
+        \end{minipage} 
+        \hspace{1cm}
+        \begin{minipage}{0.45\textwidth}
+            Beim Fabry-Perot-Etalon handelt es sich um eine beidseitig beschichtete Glasplatte mit Brechungsindex $n$, Reflektivität $R$ und Dicke $d$. Trifft ein Lichtstrahl der Wellenlänge $\lambda$ mit einem Winkel $\alpha$ zur optischen Achse auf das Etalon, so wird ein Teils des Lichts mit Ausfallswinkel $\alpha$ direkt hindurchgeleitet, während Teile des Lichts durch Reflektionen im Etalon zusätzlich ein Vielfaches des Gangunterschieds $g(\alpha)$ zurücklegen. \textcolor{red}{Literaturangabe}
+            \begin{align} \label{eq:etalon_gangunterschied}
+                g(\alpha) = 2 d \sqrt{n^2 - \sin^2{(\alpha)} }
+            \end{align}
+            Der Lichtstrahl erzeugt dabei genau dann ein Intensitätsmaximum $k.$ Ordnung, wenn der Gangunterschied $g(\alpha_k) = k \cdot \lambda$ einem Vielfachen der Wellenlänge entspricht. Dieses Maximum erscheint schließlich als heller Ring, der durch das Okular beobachtet werden kann. 
+        \end{minipage}
     \end{figure}
 
-
+    Zur Durchführung des Experiments wurde die Cadmiumlampe zunächst 5 Minuten vorgeheizt werden, sodass eine ausreichend starke Lichtemission gegeben war. Nun wurde das Okular scharf auf die integrierte Strichskala gestellt und die Abbildungslinse auf der optischen Bank verschoben, sodass im Okular Interferenzringe scharf beobachtbar wurden. Zur Optimierung des Bildes wurde zuletzt die Kondensorlinse verschoben um eine gleichmäßige Ausleuchtung des Etalons zu erreichen und Justierschrauben am Etalons ermöglichten die Zentrierung der Ringe um den Mittelpunkt der Strichskala. \\
+    
+    Während die Beobachtung der Interferenzmuster durch das Okular eine qualitative Analyse der Übergänge ermöglichte, so ermöglicht die Aufnahme durch die gegebene Kamera die quantitative Gewinnung von Daten. Hierzu wurde das Okular im weiteren Verlauf des Versuchs durch eine Kamera ersetzt, welche über eine USB-Datenverbindung am Computer von einem Python-Programm \enquote{Zeeman-Effekt} ausgelesen wurde. Das Programm wurde von der Praktikumsleitung gestellt und ermöglicht sowohl Live-Aufnahmen des Interferenzmusters, als auch eine Messfunktion zur Magnetfeld-Kalibrierung. Für die Kalibrierung des Magnetfelds standen ein digitales Strom-Messgerät sowie eine Hall-Sonde zur Verfügung, welche durch die Messfunktion des Phython-Skripts ausgelesen werden konnten.
 
 
 \subsection{Beobachtung der Aufspaltung}
-    \begin{itemize}
-        \item Beobachtung $B = 0$ (1 Ring)
-        \item Beobachtung $B \gg 0$ (3 Ringe)
-        \item Beobachtung $B \gg 0$ mit Filter (1 oder 2 Ringe)
-        \item Erklärung des Gesehenen
-    \end{itemize}
-
+    Zuerst wurde das Interferenzmuster der Cadmiumlampe ohne angelegtes Magnetfeld $(B = 0)$ in der transversalen Konfiguration durch das Okular betrachtet. Mit transversaler Konfiguration wir hierbei gemeint, dass die Ausrichtung der Polschuhe des Elektromagneten und damit auch die Magnetfeldlinien senkrecht auf der optischen Achse der Beobachtung stehen. \\
+    Wie in Abbildung \ref{fig:Zeeman_B=0_trans} dargestellt, konnten nun rötliche, konzentrische Ringe betrachtet werden, welche den Beugungsordnungen des Etalons entsprechen. Wie erwartet tritt pro Beugungsordnung nur ein Intensitätsmaximum auf, was dafür spricht, dass es sich um den entarteten Übergang der roten $\SI{643.8}{nm}$-Cadmium-Linie $^1 D_2 \rightarrow ^1 P_1$ handelt. Zwar besitzt Cadmium weitere Emissionslinien, welche hier angeregt werden konnten, doch aufgrund des verwendeten Interferenzfilters mit Mittelwellenlänge $\langle \lambda \rangle = \SI{643.8(20)}{nm}$ und Halbwertsbreite  $\Delta \lambda = \SI{13.0}{nm}$ wurden diese herausgefiltert. 
+    \begin{figure}[H]
+        \centering
+        \begin{subfigure}[t]{0.4\textwidth}
+            \includegraphics[width=\linewidth]{figs/ZeemanFoto_001.png}
+            \caption{$B = 0$}
+            \label{fig:Zeeman_B=0_trans}
+        \end{subfigure}
+        \hspace{1cm}
+        \begin{subfigure}[t]{0.4\textwidth}
+            \includegraphics[width=\linewidth]{figs/ZeemanFoto_002.png}
+            \caption{$B \gg 0$}
+            \label{fig:Zeeman_B>0_trans}
+        \end{subfigure}
+        \caption{Beobachtung in transversaler Konfiguration: mit und ohne Magnetfeld.}
+    \end{figure}
+    Nun wurde der Strom $I$ durch die Elektromagneten soweit erhöht, dass das resultierende Magnetfeld eine Aufspaltung jeder Beugungsordnung in drei Linien induzierte. Abbildung \ref{fig:Zeeman_B>0_trans} zeigt, dass neben der zuvor beobachteten mittleren Linie nun zu beiden Seiten je eine weitere Linie zu sehen ist. 
+    
+    
+    
+    \begin{figure}[H]
+        \centering
+        \begin{minipage}{0.3\textwidth}
+            \centering
+            \includegraphics[width=\linewidth]{figs/Zeeman_Übergänge.png}
+            \caption{Niveau-Aufspaltung von Cadmium im Magnetfeld. \cite{Zeemann-Effekt_LD-Handblätter}}
+            \label{fig:Zeeman_Übergänge}
+        \end{minipage} 
+        \hspace{1cm}
+        \begin{minipage}{0.45\textwidth}
+            Die Tatsache, dass im Magnetfeld drei Linien verschiedener Wellenlängen zu beobachten sind, wird durch die Niveau-Aufspaltung des Übergangs $^1 D_2 \rightarrow ^1 P_1$ in Abbildung \ref{fig:Zeeman_Übergänge} erklärt. Im Magnetfeld spaltet sich jedes Energie-Niveau $j$ in $(2j + 1)$ weitere auf, welche nahezu äquidistant zu einer liegen. Aufgrund der Auswahlregel $\Delta l \in \{\pm 1 \}$ sind hier ausschließlich Übergänge mit $\Delta j = -1$ beobachtbar, welche sich nun in links-drehende $\sigma^-$-Übergänge $(\Delta m_j = -1)$, rechts-drehende $\sigma^+$-Übergänge $(\Delta m_j = +1)$ sowie linear polarisierte $\pi$-Übergänge $(\Delta m_j = 0)$ unterteilen lassen. Mit Bezug auf die Beobachtung (Abb. \ref{fig:Zeeman_B>0_trans}) bedeutet dies, dass es sich bei der mittleren Linie um den $\pi$-Übergang handeln muss, während die äußeren Linien durch den $\sigma^\pm$-Übergang erzeugt werden. 
+        \end{minipage}
+    \end{figure}
+    Da die Drehimpulsänderung $\Delta m_j$ immer mit der Rotationsachse parallel zum Magnetfeld $\bm{B}$ zu verstehen sind, ist die beobachtete Strahlung von der Ausrichtung des Magnetfelds abhängig. Wie die Grafiken in Abbildung \ref{fig:Zeeman_Dipolstrahlung} illustrieren, kann die Emission eines polarisierter Strahlung durch die Betrachtung des Hertz'schen Dipols verstanden werden. Ein Elektron ohne Drehimpuls im homogenen Magnetfeld $\bm{B}$ schwingt parallel zu diesem und sendet dabei senkrecht zum Magnetfeld linear-polarisierte Strahlung aus, welche in der gleichen Ebene wie das Elektron schwingt. In der vorliegenden transversalen Konfiguration bedeutet dies, dass die Strahlung des $\pi$-Übergangs horizontal (linear) polarisiert empfangen wird. Ein Elektron mit positiven/negativem Drehimpuls wird hingegen um die Magnetfeld-Achse mit positiver/negativer Orientierung \enquote{rotieren}, was aus der vorliegenden Perspektive einer vertikalen Schwingung gleicht. Aus diesem Grund werden die $\sigma^\pm$-Übergänge als vertikal (linear) polarisierte Strahlung empfangen.
 
     \begin{figure}[H]
         \centering
@@ -38,67 +82,464 @@
             \caption{}
         \end{subfigure}
         \caption{Winkelverteilung der elektrischen Dipolstrahlung. \cite{Zeemann-Effekt_LD-Handblätter}}
+        \label{fig:Zeeman_Dipolstrahlung}
     \end{figure}
+    Um die Theorie zur Ursache der beobachteten $\pi$- und $\sigma^\pm$-Strahlung zu bestätigen, wurde nun ein Polarisationsfilter auf der optischen Bank eingesetzt, dessen Ausrichtung durch den Winkel $\phi$ relativ zur Vertikalen beschrieben wird. Wie in Abbildung \ref{fig:Zeeman_trans_Polarfilter_0} dargestellt, konnte mit dem Polarisationsfilter im Winkel $\phi = \SI{0}{\degree}$ der $\pi$-Übergang unterdrückt werden. Dies entspricht der theoretischen Vorhersage, dass der $\pi$-Übergang als linear polarisiertes Licht in der Horizontalen abgestrahlt wird. 
+    \begin{figure}[H]
+        \centering
+        \begin{subfigure}[t]{0.4\textwidth}
+            \includegraphics[width=\linewidth]{figs/ZeemanFoto_003.png}
+            \caption{$\phi = \SI{0}{\degree}$, $B \gg 0$}
+            \label{fig:Zeeman_trans_Polarfilter_0}
+        \end{subfigure}
+        \hspace{1cm}
+        \begin{subfigure}[t]{0.4\textwidth}
+            \includegraphics[width=\linewidth]{figs/ZeemanFoto_004.png}
+            \caption{$\phi = \SI{90}{\degree}$, $B \gg 0$}
+            \label{fig:Zeeman_trans_Polarfilter_90}
+        \end{subfigure}
+        \caption{Beobachtung in transversaler Konfiguration mit Magnetfeldstärke $B$ und Polarisationsfilter mit Winkel $\phi$.}
+    \end{figure}
+    Nun wurde der Polarisationsfilter um $\SI{90}{\degree}$ gedreht, sodass der $\pi$-Übergang wieder zu sehen war und die $\sigma^\pm$-Übergänge maximal unterdrückt wurden. Im Einklang mit der theoretischen Vorhersage zeigt dies, dass die $\sigma^\pm$-Übergänge als linear polarisiertes Licht in der Vertikalen abgestrahlt werden.
 
 
 
 \subsection{Magnetfeld-Kalibrierung}
-    \begin{itemize}
-        \item Aufbau der Magnetfeld-Messung
-        \item Ermittlung des Zusammenhang $B(I)$
-        \item Ermittlung der Zusammenhangs $B(x)$
-        \item vergleiche zweite Magnetfeld-Messung
-        \item Diskussion Thermischer Effekte
-    \end{itemize}
+
+    Demnächst wurde Kalibrierung des Magnetfeldes vorgenommen. Das hilft, die zeitlichen Änderungen des Magnetfeldes zu erkennen und deren Einfluss auf die Messung zu bestimmen. Dazu wurde die Cd-Lampe durch die Hall-Sonde ersetzt, wobei die Position zwischen den Polschuhen mit höchstem Magnetfeld ausgewählt wurde. Das haben wir durch eine Reihe von Messungen der Position der Hall-Sonde und entsprechenden Magnetfeldstärke realisiert. Dabei wurde die Unsicherheit des Ortes als $\Delta x = 0.1 mm$ experimentell bestimmt. Der Stromwert wird zwischen \SI{0}{\ampere} und \SI{10}{\ampere} in kleinen Schritten variiert. Anhand der gemessenen Daten wurde der funktionale Zusammenhang zwischen dem Strom $I$ und der Magnetfeldstärke $B(I)$ durch Spline-Interpolation mit einem Polynomen 3. Grades kalibriert. 
+
+\begin{figure}[H]
+        \centering
+        \includegraphics[width=0.65\linewidth]{figs/Kalibration.png}
+        \caption{Kalibrationskurve vor(blau) und nach(rot) der Messung}
+        \label{fig:Kalibrationskurve}
+    \end{figure}
+    
+    Die Fit-Kurve wird durch folgende Formel beschrieben: 
+    \[
+B(I) = a \cdot I^3 + b \cdot I^2 + c \cdot I + d
+    \] wobei $a$, $b$, $c$ und $d$ die Anpassungskoeffizienten sind. Aus den berechneten Daten erhält man:
+    
+\begin{table}[H]
+\centering
+\label{tab:fit_kompakt}
+\begin{tabular}{lSS}
+\toprule
+{Parameter} & {Kalibration 1} & {Kalibration 2} \\
+\midrule
+$a$ & 0.447 \pm 0.014 & 0.335 \pm 0.031 \\
+$b$ & 0.1500 \pm 0.0680 & 0.335 \pm 0.078 \\
+$c$ & -107.0 \pm 0.9 & -103.1 \pm 0.5 \\
+$d$ & -6.2 \pm 3.0 & -10.0 \pm 0.9 \\
+\bottomrule
+\end{tabular}
+\caption{Fit-Parameter der kubischen Anpassung}
+\end{table}
+
+Man kann erkennen, dass die Parameter vor und nach der Messung unterschiedlich sind, was aber nicht zu wesentlichen Unterschieden an Anpassungskurven führt. Der Grund für die Abweichung von Koeffizienten kann die Erwärmung der Magneten während der Messung sein. Für weitere Berechnungen werden Koeffizienten vor Begin der Messung verwendet.  
+
+    
 
 \subsection{Messung in Transversaler Konfiguration}
-    \begin{itemize}
-        \item Aufbau der Kamera und Aufnahme
-        \item Spezifikationen der Kamera
-        \item Beobachtung $B = 0$ (1 Ring)
-        \item Beobachtung $B \gg 0$ (3 Ringe)
-        \item Beobachtung $B \gg 0$ mit Filter (1 oder 2 Ringe)
-        \item Erklärung des Gesehenen
-    \end{itemize}
+    Nach der ersten Magnetfeld-Kalibrierung wurde nun das Interferenzmuster in transversaler Konfiguration mithilfe eine Kamera durchgeführt. Das verwendete Aufnahmeprogramm ordnet dabei jedem Bild den eingestellten Stromwert $I$ zu, sodass aus dem zugehörigen Magnetfeld $B(I)$ später das Bohr'sche Magneton $\mu_B$ abgeleitet werden kann. Die qualitativen Ergebnisse durch die Kamera-Aufnahme (Abb, \ref{fig:Zeeman_B=0_trans}, \ref{fig:Zeeman_B>0_trans}) stimmen mit der Beobachtung durch das Okular überein und werden daher nicht getrennt noch einmal diskutiert. 
+    \textcolor{red}{Hier müssen wir uns noch eine sinnvolle Gliederung überlegen, wie wir das hier zusammen mit der Okular-Messung auswerten.}
 
-
+    
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.65\linewidth]{figs/ZeemanFoto_006.png}
+        \caption{Gerade unterscheidbare Linien bei $I=3.47 A$ \textcolor{red}{ich glaube hier von brauchen wir nicht unbedingt das Bild. Wichtiger sind hier die Werte zur Bestimmung der Auflösung (glaube ich)}}
+    \end{figure}
+    
 
 
 \subsection{Messung in Longitudinaler Konfiguration}
-    \begin{itemize}
-        \item Aufbau der Messung 
-        \item Beobachtung $B = 0$ (1 Ring)
-        \item Beobachtung $B \gg 0$ (2 Ringe)
-        \item Beobachtung $B \gg 0$ mit Filter \& Platte (1 bis 2 Ringe)
-        \item Erklärung des Gesehenen
-    \end{itemize}
+
+    Nun wurde die Apparatur mit Elektromagnet und Cadmiumlampe um $\SI{90}{\degree}$ gedreht, sodass das Magnetfeld nun parallel zu optischen Achse verläuft. Abbildung \ref{fig:Zeeman_B=0_long} zeigt, dass ohne anliegendes Magnetfeld $B$ wie schon in transversaler Konfiguration (Abb. \ref{fig:Zeeman_B=0_trans}) lediglich der entartete Übergang $^1 D_2 \rightarrow ^1 P_1$ zu sehen ist. Ohne anliegendes Magnetfeld existiert keine vorgezogene Quantisierungsachse und die emittierte Strahlung ist dementsprechend richtungsunabhängig. 
+    \begin{figure}[H]
+        \centering
+        \begin{subfigure}{0.4\textwidth}
+            \includegraphics[width=\linewidth]{figs/ZeemanFoto_019.png}
+            \caption{$B = 0$}
+            \label{fig:Zeeman_B=0_long}
+        \end{subfigure}
+        \hspace{1cm}
+        \begin{subfigure}{0.4\textwidth}
+            \includegraphics[width=\linewidth]{figs/ZeemanFoto_020.png}
+            \caption{$B \gg 0$}
+            \label{fig:Zeeman_B>0_long}
+        \end{subfigure}
+        \caption{Beobachung in longitudinaler Konfiguration: mit und ohne Magnetfeld.}
+    \end{figure}
+    Als nächstes wurde das Magnetfeld erhöht, bis eine Aufspaltung jeder Beugungsordnung in zwei Linien sichtbar wurde (Abb. \ref{fig:Zeeman_B>0_long}). Der Vergleich mit der vorherigen Beobachtung in transversaler Konfiguration (Abb. \ref{fig:Zeeman_B>0_trans}) ergibt, dass es sich bei der fehlenden Emissionslinie um den $\pi$-Übergang handelt. Durch die Betrachtung des Hertz’schen Dipols (Abb. \ref{fig:Zeeman_Dipolstrahlung}) wird klar, dass ein Elektron entlang der Achse seiner Schwingung keine elektromagnetische Strahlung aussendet, was in diesem Fall der optischen Achse entspricht. Weiter lässt sich die Drehimpulsänderung der $\sigma^\pm$-Übergänge durch ein Elektron visualisieren, welches um die Magnetfeld-Achse rotiert. Da die Richtung des Magnetfelds mit der optischen Achse zusammenfällt, erzeugt diese Kreisbewegung rechts- beziehungsweise links-drehendes zirkular polarisiertes Licht in Beobachungsrichtung. \\
+    
+    Um die Hypothese der zirkular-polarisierten $\sigma^\pm$-Strahlung zu verifizieren, wurde nun eine $\lambda / 4$-Platte mit einem Polarisationsfilter dahinter im Strahlengang platziert. Durchläuft nun zirkular-polarisiertes Licht $\sigma^\pm$ die $\lambda / 4$-Platte, so entsteht ein Gangunterschied einer Viertel Wellenlänge zwischen X- und Y-Komponente des einfallenden Lichts. Beim ausgehenden Licht handelt es sich folglich um linear-polarisiertes Licht mit einem Winkel von $\pm \SI{45}{\degree}$ zur so-definierten Y-Achse der $\lambda / 4$-Platte. Durch Neigung des dahinterliegenden Polarisationsfilters um $\Delta \phi = \mp \SI{45}{\degree}$ kann schließlich die Komponente $\sigma^\pm$ unterdrückt werden.  
+    \begin{figure}[H]
+        \centering
+        \begin{subfigure}{0.4\textwidth}
+            \includegraphics[width=\linewidth]{figs/ZeemanFoto_022.png}
+            \caption{$\Delta \phi = \SI{+45}{\degree}$}
+            \label{fig:Zeeman_+45_long}
+        \end{subfigure}
+        \hspace{1cm}
+        \begin{subfigure}{0.4\textwidth}
+            \includegraphics[width=\linewidth]{figs/ZeemanFoto_023.png}
+            \caption{$\Delta \phi = - \SI{45}{\degree}$}
+            \label{fig:Zeeman_-45_long}
+        \end{subfigure}
+        \caption{Beobachung in longitudinaler Konfiguration mit $\lambda / 4$-Platte und Polarisationsfilter mit relativem Winkel $\Delta \phi$.}
+    \end{figure}
+    Bei Beobachtung mit einem Winkel von $\Delta \phi = \SI{+45}{\degree}$ (Abb. \ref{fig:Zeeman_+45_long}) ist nur der äußere Ring zu sehen, was darauf hindeutet, dass die entsprechende Komponente der Emission $\sigma^\pm$ nach der $\lambda / 4 $-Platte mit einem Winkel von $\SI{+45}{\degree}$ zur Vertikalen polarisiert war. Durch Betrachtung der Interferenz-Bedingung $g(\alpha_k) = k \cdot \lambda$ \eqref{eq:etalon_gangunterschied} wird klar, dass der äußere Interferenz-Ring einem höheren Winkel $\alpha_k$ und somit einer geringeren Wellenlänge $\lambda$, also einer höheren Energie $\Delta E = \frac{h c}{\lambda}$ entspricht. Hierbei sei $c$ die Lichtgeschwindigkeit und $h$ das Plancksche Wirkungsquantum. Bei der beobachteten Linie muss es sich folglich um den $\sigma^+$-Übergang $(\Delta m_j = +1)$ handeln. \\
+    
+    In Übereinstimmung mit der Vermutung zeigt Abbildung \ref{fig:Zeeman_-45_long} wie eine Drehung des Polarisationsfilters um $\SI{90}{\degree}$ den inneren Interferenzring jeder Beugungsordnung $(\sigma^-)$ zeigt und den äußeren Interferenzring $(\sigma^+)$ jeweils unterdrückt. \\
+    
+    Während der Versuchsdurchführung wurde die Belichtungszeit der Kamera nicht angepasst, was einerseits zu einem geringeren Kontrast für die Messungen mit Polarisationsfilter führt, andererseits jedoch die Vergleichbarkeit der 
+    um die Vergleichbarkeit der Bilder sicherstellt. Es ist zu sehen, dass der Polarisationsfilter auch bei Ausrichtung in Polarisationsrichtung des einfallenden Lichts zu Intensitätsverlusten führt. Dies weicht zwar von der Erwartung an einen idealisierten Polarisationsfilter ab, ist in realen Anwendungen aufgrund von Imperfektionen jedoch nicht zu vermeiden. \textcolor{red}{evtl. die dunklen Bilder noch einmal Bearbeiten um den Kontrast zu erhöhen?} 
+    
+    
+
+    
+
     
     
 \subsection{Ergebnisse}
-    \begin{itemize}
-        \item Theoret. Abschätzung von Auflösung $\mathcal{A}$ und Finesse $\mathcal{F}$
-        \item Experim. Bestimmung von Auflösung $\mathcal{A}$ und Finesse $\mathcal{F}$
-        \item Umrechnung Pixel --> Winkel --> Wellenlänge
-        \item Positionen \& Breiten der Maxima bestimmen
-        \item Berechnung Energieverschiebung $\Delta E$
-        \item Bestimmung Bohrschen Magnetons $\mu_B$
-        \item Abschätzung von Doppler- und natürlicher Linienverbreiterung 
-        \item Literaturvergleich
-        \item Allgemeine Fehlerdiskussion 
-    \end{itemize}
+  
+    
+    
+    Jetzt wollen wir die Zeeman-Aufspaltung quantitativ auswerten. Dazu wird entlang der optischen Achse anstelle vom Okular eine Kamera platziert. Die Hall-Sonde wird entfernt und die Cd-Lampe wird montiert. Danach haben wir mithilfe von Schrauben am Fabry-Perot-Etalon die konzentrischen Ringe im Gesichtsfeld des Kameras zentriert. Dann haben wir im Programm auf PC die Koordinatensystem so eingestellt, dass der Nullpunkt unseren Koordinatensystems genau in der Mitte des Ringes nullten Ordnung liegt. Außerdem durch passende Einstellung der Kondensorlinse haben wir optimale Ausleuchtung erzielt. Man beginnt mit kleinen Strömen und sieht, wie bei der langsamen Stromerhöhung drei deutliche Peaks sich auf winkelabhängige Intensitätsverteilung ausbilden. 
 
+Zur Umrechnung der Ausgangsdaten von Pixelposition in Winkel benutzen wir folgende Formeln:
+\begin{align*}
+\Delta x &= \SI{10}{\micro\meter} \cdot \text{Pixel} \\
+ \quad \Delta x &= f \cdot \alpha
+\end{align*}
 
     \begin{figure}[H]
         \centering
-        \begin{minipage}{0.35\textwidth}
-            \centering
-            \includegraphics[width=\linewidth]{figs/Zeeman_Übergänge.png}
-            \caption{Niveaufspaltung von Cadmium durch normalen Zeeman-Effekt. \cite{Zeemann-Effekt_LD-Handblätter}}
-        \end{minipage} 
-        \hspace{1cm}
-        \begin{minipage}{0.4\textwidth}
-            Text neben Abbildung...
-        \end{minipage}
+        \includegraphics[width=0.65\linewidth]{figs/Int1.png}
+        \caption{Intensitätsverteilung gegen Winkel bei B=0}
+        \label{fig:Intens1}
     \end{figure}
+    
+    Auf dem Graphen ist noch keine Aufspaltung von Peaks zu sehen, was wir auch bei ausgeschaltetem Magnetfeld erwarten. Weiter schaltet man das Magnetfeld an und beginnt mit kleinen Strömen, wobei man sieht, wie bei der langsamen Stromerhöhung drei deutliche Peaks sich auf winkelabhängige Intensitätsverteilung ausbilden. 
+    
+       \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.65\linewidth]{figs/Int2.png}
+        \caption{Intensitätsverteilung gegen Winkel beim angeschalteten Magnetfeld B= 366\si{\milli\tesla}}
+        \label{fig:Intens1}
+    \end{figure}
+    
+     \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.65\linewidth]{figs/Int3.png}
+        \caption{Intensitätsverteilung gegen Winkel beim angeschalteten Magnetfeld B= 397\si{\milli\tesla}}
+        \label{fig:Intens1}
+    \end{figure}
+    
+     \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.65\linewidth]{figs/Int4.png}
+        \caption{Intensitätsverteilung gegen Winkel beim angeschalteten Magnetfeld B= 436\si{\milli\tesla}}
+        \label{fig:Intens1}
+    \end{figure}
+    
+     \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.65\linewidth]{figs/Int5.png}
+        \caption{Intensitätsverteilung gegen Winkel beim angeschalteten Magnetfeld B= 466\si{\milli\tesla}}
+        \label{fig:Intens1}
+    \end{figure}
+    
+     \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.65\linewidth]{figs/Int6.png}
+        \caption{Intensitätsverteilung gegen Winkel beim angeschalteten Magnetfeld B= 345\si{\milli\tesla}}
+        \label{fig:Intens1}
+    \end{figure}
+    
+Auf dem Graphen beim maximal erreichaberen Stromwert sieht man klare Aufspaltung in drei Peaks. Die drei beobachteten Peaks entstehen durch die drei verschiedenen Polarisationen $\sigma^{-}$, $\pi$ und $\sigma^{+}$. 
+Dabei ist:
+\begin{itemize}
+    \item der linke Peak auf die $\sigma^{+}$-Polarisation zurückzuführen,
+    \item der mittlere Peak auf die $\pi$-Polarisation zurückzuführen,
+    \item der rechte Peak auf die $\sigma^{-}$-Polarisation zurückzuführen.
+\end{itemize}
+
+
+
+% \begin{figure}[h]
+      %  \centering
+       % \begin{minipage}{0.35\textwidth}
+        %    \centering
+            %\includegraphics[width=\linewidth]{figs/Zeeman_Übergänge.png}
+            %\caption{Niveaufspaltung von Cadmium durch normalen Zeeman-Effekt. \cite{Zeemann-Effekt_LD-Handblätter}}
+        %\end{minipage} 
+        %\hspace{1cm}
+        %\begin{minipage}{0.4\textwidth}
+         %   Text neben Abbildung...
+        %\end{minipage}
+    %\end{figure}
+    
+    \subsubsection{Berechnung der Energieverschiebung $\Delta E$}
+
+  Wir haben unsere Messung bei relativ kleinem Strom $I=0.5 A$ begonnen und dann in $0.4 A$ Schritten Stromwert erhöht. Die Ausbildung von Peaks wurde aber erst ab dem Wert $I=3.57 A$ sichtbar. Bei der Messung wurde leider der maximal möglicher Strom durch den Wert $I=5.05 A$ begrenzt. Das ist auf die Erwärmung von Magneten zurückzuführen. Dementsprechend erhält man fünf Graphen mit durch Gaußfunktionen beschriebene Verteilungen. Für die Anpassung der Gaussfunktionen an die Messdaten benutzt man folgenden Zusammenhang: 
+  \begin{equation}
+f(A_1, \sigma_1, \mu_1, A_2, \sigma_2, \mu_2, A_3, \sigma_3, \mu_3) = 
+\frac{A_1}{\sigma_1 \sqrt{2\pi}} \exp\left(-(x - \mu_1)^2 / 2\sigma_1^2\right) +
+\frac{A_2}{\sigma_2 \sqrt{2\pi}} \exp\left(-(x - \mu_2)^2 / 2\sigma_2^2\right) +
+\frac{A_3}{\sigma_3 \sqrt{2\pi}} \exp\left(-(x - \mu_3)^2 / 2\sigma_3^2\right)
+\end{equation}
+
+Die Formel wird durch drei Parameter definiert: Mittelwert (Erwartungswert) $ \mu $, Standardabweichung $ \sigma $ und Amplitude $A$.
+  
+  
+  \begin{figure}[H]
+        \centering
+        \begin{subfigure}{0.7\textwidth}
+            \includegraphics[width=\linewidth]{figs/Gauss1.png}
+            \caption{}
+        \end{subfigure}
+        \hspace{1cm}
+        \begin{subfigure}{0.7\textwidth}
+            \includegraphics[width=\linewidth]{figs/Gauss2.png}
+            \caption{}
+            \label{fig:frequ_kaskode}
+        \end{subfigure}
+        \caption{Gauss-Fit von drei Peaks bei $I = 3.57 A $(a) und $I = 3.93 A $(b)}\end{figure}
+
+  \begin{figure}[H]
+        \centering
+        \begin{subfigure}{0.7\textwidth}
+            \includegraphics[width=\linewidth]{figs/Gauss3.png}
+            \caption{}
+        \end{subfigure}
+        \hspace{1cm}
+        \begin{subfigure}{0.7\textwidth}
+            \includegraphics[width=\linewidth]{figs/Gauss4.png}
+            \caption{}
+            \label{fig:frequ_kaskode}
+        \end{subfigure}
+        \caption{Gauss-Fit von drei Peaks bei  $I = 4.39 A$(a) und $I = 4.79 A$(b)}
+    \end{figure}
+
+\begin{figure}[H]
+        \centering
+        \includegraphics[width=0.7\linewidth]{figs/Gauss5.png}
+        \caption{Gauss-Fit von drei Peaks bei $I= 5.05 A$}
+        \label{fig:Intens1}
+    \end{figure}
+
+Die Anpassungsparameter aus Gauß-Fit sehen folgendermaßen aus:
+
+
+\begin{table}[H]
+\centering
+\label{tab:energieaufspaltung}
+\sisetup{
+  separate-uncertainty = true,
+  round-mode = places,
+  round-precision = 3
+}
+\begin{tabular}{
+  S[table-format=4.2]
+  S[table-format=-3.0]
+  S[table-format=2.2]
+  S[table-format=-2.2]
+}
+\toprule
+\multicolumn{1}{c}{\boldmath$I$ [\si{\milli\ampere}]} &
+\multicolumn{1}{c}{\boldmath$B$ [\si{\milli\tesla}]} &
+\multicolumn{1}{c}{$\boldsymbol{\Delta E(\sigma^+)}$ [\si{\micro\electronvolt}]} &
+\multicolumn{1}{c}{$\boldsymbol{\Delta E(\sigma^-)}$ [\si{\micro\electronvolt}]} \\
+\midrule
+3570 \pm 36 & -366 \pm 4 & 15.14 \pm 0.47 & -12.42 \pm 0.39 \\
+3930 \pm 39 & -397 \pm 4 & 17.20 \pm 0.53 & -14.27 \pm 0.44 \\
+4390 \pm 44 & -436 \pm 4 & 19.28 \pm 0.60 & -15.56 \pm 0.48 \\
+4790 \pm 48 & -466 \pm 5 & 20.57 \pm 0.64 & -16.75 \pm 0.52 \\
+5050 \pm 55 & -485 \pm 5 & 21.42 \pm 0.67 & -17.68 \pm 0.55 \\
+\bottomrule
+\end{tabular}
+\caption{Energieaufspaltungen für verschiedene Stromstärken und Magnetfelder.}
+\end{table}
+
+
+Für weitere Berechnungen werden $\mu_{3,1} = \alpha_{\sigma^\pm}$ und $\mu_2 = \alpha_\pi$ benutzt. Als Interferenzbedingung für das Etalon verwendet man die Formel\cite{P401_Praktikumsanleitung} $\Delta s = 2d \cdot \sqrt{n^2 - \sin^2(\alpha_k)} = k \cdot \lambda$, wobei $\delta$ = optischer Gangunterschied, $d$ = Dicke des Etalons, $n$ = Brechzahl des Glasmaterials und $k$ = Interferenzordnung. Gegeben war $d = 4 mm$, $n = 1.457$, $k=1,2,3$ . Jetzt können wir die Energieverschiebung nach der Formel\cite{P401_Praktikumsanleitung}
+\begin{equation}
+\Delta E = -h c \frac{ \Delta\lambda}{\lambda_{\sigma^\pm} \lambda_\pi^0}
+\end{equation}
+berechnen. Dabei ist $ \lambda_\pi^0 = (643.8 \pm 20) nm$ gegeben. Wenn man die Formel vereinfacht, bekommt man mit \[
+\frac{\lambda_{\pi}}{\lambda_{\sigma}}
+= \frac{\sqrt{n^{2} - \sin^{2} \alpha_{\pi}}}{\sqrt{n^{2} - \sin^{2} \alpha_{\sigma}}}
+= \sqrt{\frac{n^{2} - \sin^{2} \alpha_{\pi}}{n^{2} - \sin^{2} \alpha_{\sigma}}}
+\] die Gleichung 
+\[
+\boxed{
+\Delta E = -\frac{hc}{\lambda_{\pi}^0} \left(
+1 - 
+\sqrt{
+\frac{
+n^2 - \sin^2 \alpha_{\pi}
+}{
+n^2 - \sin^2 \alpha_{\sigma^\pm}
+}
+}
+\right)
+}
+\]
+
+\begin{table}[H]
+\centering
+\small
+\setlength{\tabcolsep}{10pt}
+\renewcommand{\arraystretch}{1.2}
+\begin{tabular}{S[table-format=4.0(2)] 
+                S[table-format=-3.0(2)] 
+                S[table-format=2.2(2)] 
+                S[table-format=-2.2(2)]}
+\toprule
+{$I$ / \si{\milli\ampere}} & 
+{$B$ / \si{\milli\tesla}} & 
+{$\Delta E(\sigma^+)$ / \si{\micro\electronvolt}} & 
+{$\Delta E(\sigma^-)$ / \si{\micro\electronvolt}} \\
+\midrule
+3570(36) & -366(4) & 15.14(47) & -12.42(39) \\
+3930(39) & -397(4) & 17.20(53) & -14.27(44) \\
+4390(44) & -436(4) & 19.28(60) & -15.56(48) \\
+4790(48) & -466(5) & 20.57(64) & -16.75(52) \\
+5050(55) & -485(5) & 21.42(67) & -17.68(55) \\
+\bottomrule
+\end{tabular}
+\caption{Energieaufspaltungen für verschiedene Stromstärken und Magnetfelder.}
+\label{tab:energieaufspaltung}
+\end{table}
+
+ \subsubsection{Bestimmung des Bohrschen Magnetons $\mu_B$}
+ 
+ Theoretischen Überlegungen zufolge kann man Bohrsches Magneton $\mu_B$ aus Geradenfit nach folgender Formel\cite{Spektroskopie mit einem Fabry-Perot-Etalon} bestimmen:
+ \begin{equation}
+\Delta E = g_J \cdot \Delta m_J \cdot \mu_B \cdot B
+\end{equation}
+
+wobei $g_J$ Landé-Faktor ist (in unserem Fall = 1) und $\Delta m_J = \pm 1$ bei den $\sigma^\pm$-Übergängen. 
+ 
+ 
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.9\linewidth]{figs/Bohr_fit1.png}
+        \caption{Fit zur Bestimmung des Bohrschen Magneton $\mu_B$ }
+        \label{fig:Intens1}
+    \end{figure}
+    
+    \begin{figure}[H]
+        \centering
+        \includegraphics[width=0.9\linewidth]{figs/Bohr_Magneton.png}
+        \caption{$\sigma^-$ und $\sigma^+$ aus dem Fit zur Bestimmung des Bohrschen Magneton $\mu_B$ }
+        \label{fig:Intens1}
+    \end{figure}
+    
+
+
+Die Energieverschiebung $\Delta E$ wird als Funktion der magnetischen Flussdichte $B$ aufgetragen und mittels linearer Regression ausgewertet:
+\begin{equation}
+\Delta E = \mu_B \cdot B
+\end{equation}
+
+Dabei ergibt sich das Bohrsche Magneton $\mu_B$ direkt aus der Steigung der Geraden.
+
+
+\begin{table}[H]
+\centering
+\label{tab:bohr_magneton_results}
+\begin{tabular}{lccc}
+\toprule
+\textbf{Größe} & \textbf{Steigung $m$} & \textbf{$\mu_B$} & \textbf{$\chi^2$} \\
+& [\unit{\times 10^{-24}\joule\per\tesla}] & [\unit{\times 10^{-24}\joule\per\tesla}] & \\
+\midrule
+$\sigma^+$-Komponente & $6.950 \pm 0.090$ & $6.950 \pm 0.090$ & $0.866$ \\
+$\sigma^-$-Komponente & $5.696 \pm 0.071$ & $5.696 \pm 0.071$ & $0.800$ \\
+\midrule
+Gemittelter Wert & -- & $6.323 \pm 0.057$ & -- \\
+Literaturwert & -- & $9.274$ & -- \\
+\bottomrule
+\end{tabular}
+\caption{Werte aus dem Geradenfit zur Bestimmung des Bohrschen Magnetons aus der Zeeman-Aufspaltung}
+\end{table}
+
+
+Der experimentell bestimmte Wert für das Bohrsche Magneton beträgt:
+\begin{equation}
+\mu_B^{\text{exp}} = (6.323 \pm 0.057) \times 10^{-24} \, \unit{\joule\per\tesla}
+\end{equation}
+
+Der Literaturwert\cite{Dor56} beträgt:
+\begin{equation}
+\mu_B^{\text{lit}} = 9.274 \times 10^{-24} \, \unit{\joule\per\tesla}
+\end{equation}
+
+Die relative Abweichung beträgt also $31.82\%$, was ein ziemlich gutes Ergebnis der Messung ist, die hohe Genauigkeit bei der Justage und den Rechnungen  erfordet.
+
+\subsubsection{Bestimmung von Auflösung $\mathcal{A}$ und Finesse $\mathcal{F}$}
+Als Nächstes bestimmen wir das Auflösungsvermögen und die Finesse des Etalons. Dazu wird zuerst theoretischer Wert berechnet. \begin{align}
+\mathcal{F}_{\text{theo}} = \frac{\pi \cdot \sqrt{R}}{1 - R^2} \approx 9{,}62
+\end{align}
+, wobei $R=0.85$ gegeben war. Für das Auflösungsvermögen bekommt man dementsprechend \begin{align}
+\mathcal{A}_{\text{theo}} = \frac{F \cdot 2nd}{\lambda} = 1{,}744 \cdot 10^{5}, \quad \text{mit} \quad n = 1{,}457, \quad d = \SI{4}{\milli\meter}, \quad \lambda = \SI{643,8}{\nano\meter}
+\end{align}
+Jetzt wollen wir anhand experimentellen Daten die Koeffizienten für transversale und longitudianle Konfigurationen berechnen. Leider haben wir vergessen, die Auflösungsgrenze für longitudinale Richtung zu bestimmen, dementsprechend beziehen sich nächste Rechenschritte nur auf Konfiguration in der transversalen Richtung.  Dabei benutzt man Werte, die bei gerade noch auflösbare Ringe notiert wurden. Das sind $I=(3.47\pm0.34) A$
+und $B = (357\pm 3) mT$.
+
+Das Auflösungsvermögen lässt sich mit folgender Gleichung\cite{Dem17} bestimmen:
+\begin{equation}
+\mathcal{A} = \frac{\lambda}{\Delta\lambda} = \frac{hc}{\mu_B \lambda B}
+\end{equation}
+
+Die berechneten Werte betragen:
+\begin{align}
+\mathcal{A}_{\text{trans}} &= (1.367\pm0.017 ) \times 10^5 \\
+\end{align}
+
+Die Finesse\cite{Dem17} ergibt sich aus:
+\begin{equation}
+\mathcal{F} = A \cdot \frac{\lambda}{2nd}
+\end{equation}
+
+Mit den konkreten Werten:
+\begin{align}
+\mathcal{F}_{\text{trans}} &= 7.55\pm0.09  \\
+\end{align}
+
+Die theoretische Finesse des Etalons beträgt \(\mathcal{F}_{\text{theo}} = 9{,}62\), während der experimentell bestimmte Wert für die transversale Konfiguration \(\mathcal{F}_{\text{trans}} = 7.55 \pm 0.09\) beträgt. Dies entspricht einer Abweichung von etwa $21.5\%$ vom theoretischen Wert, was auf systematische Fehler wie Justierungen oder Reflexionsverluste hindeutet.
+
+Beim Auflösungsvermögen liegt der theoretische Wert bei \(\mathcal{A}_{\text{theo}} = 1{,}744 \cdot 10^{5}\), während der experimentelle Wert für die transversale Konfiguration \(\mathcal{A}_{\text{trans}} = (1.367 \pm 0.017) \times 10^5\) beträgt. Die Abweichung beträgt hier etwa $21.6\%$, was konsistent zur Abweichung bei der Finesse ist, da \(\mathcal{F}\) direkt proportional zu \(\mathcal{A}\) ist.
+
+Die experimentellen Werte liegen somit systematisch niedriger als die theoretischen Vorhersagen, was durch nicht ideale Bedingungen wie unvollständige Polarisation, Streulicht, Abweichungen der tatsächlichen Reflektivität \(R\) vom Nominalwert \num{0,85} und Abweichung des Wertes des Bohrschen Magnetons $\mu_B$ vom Literaturwert erklärt werden kann.
+
+\subsubsection{Bestimmung der Doppler-Verbreitung}
+
+Die Doppler-Verbreiterung\cite{Sch09} der Cadmium-Linie beträgt
+\begin{equation}
+  \Delta\lambda_\text{D}
+  = \frac{\lambda_0}{c}
+    \sqrt{\frac{8 k_\text{B} T \ln 2}{m}}
+  = \SI{1.37}{\pico\meter}.
+  \label{eq:doppler}
+\end{equation}
+Dabei werden folgende Werte verwendet:
+$m = \SI{112.4}{\atomicmassunit}$ (Cd-112),
+$T = \SI{1000}{\kelvin}$,
+$\lambda_0 = \SI{643.8}{\nano\meter}$.
+
+Das Spektrometer selbst begrenzt die Linienbreite auf
+\begin{equation}
+  \Delta\lambda_\text{inst}
+  = \frac{\lambda}{A}
+  = \SI{4.71 }{\pico\meter}.
+  \label{eq:inst}
+\end{equation}
+
+Der Vergleich zeigt, dass die gemessene instrumentelle Breite (\SI{4.71}{\pico\meter}) die theoretische Doppler-Breite (\SI{1.37}{\pico\meter}) deutlich übertrifft.  
+Dieser Überschuss lässt sich auf Abbildungsfehler der Optik sowie weitere instrumentelle Effekte zurückführen.
+
 
 

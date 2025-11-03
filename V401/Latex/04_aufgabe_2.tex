@@ -1,46 +1,132 @@
-\section{Teil \uproman{2}: Frank-Hertz-Versuch}
+\section{Teil \uproman{2}: Franck-Hertz-Versuch}
 
 \subsection{Aufbau}
-    \begin{itemize}
-        \item Vorgehen beim Aufbau
-        \item Bestimmung von $U\sub{1,max}$
-    \end{itemize}
+    Der Franck-Hertz-Versuch wird in einem evakuierten Glas-Zylinder durchgeführt, welcher mit Quecksilber-Gas (\texttt{Hg}) angereichert ist. Am linken Ende des Zylinders befindet sich ein aufgewickelter Draht, welcher sich durch das Anlegen einer Heizspannung $U_H$ erhitzt und durch die frei-werdende thermische Energie Elektronen emittiert. Die freien Elektronen befinden sich nun zwischen einer Kathode am Heizdraht sowie der Gitter-Anode in der Mitte des Zylinders über welche die Beschleunigungsspannung $U_B \coloneqq U_1$ abfällt. Die Elektronen beschleunigen in Richtung der Gitteranode und während ein Teil der ELektronen von dieser absorbiert und zurückgeführt werden, passieren die übrigen ELektronen das Gitter zur zweiten Hälfte des Zylinders. In diesem Bereich des Zyinders liegt eine schwache Brems- / Gegenspannung zwischen Auffänger und Gitteranode an die dafür sorgt, dass nur Elektronen mit einer bestimmten Mindestenergie zum Auffänger am anderen Ende gelangen und dort als Strom gemessen werden können. Der gemessene Strom $I_A$ ist proportional zur Anzahl an Elektronen, welche die notwendige Energie $E \geq E\sub{min}$ besitzen, um den Zylinder vollständig zu durchqueren. (Abb. \ref{fig:Hertz_Aufbau}) \\
+    
+    \begin{wrapfigure}{r}{0.45\textwidth}
+            \centering
+            \includegraphics[width=\linewidth]{figs/Hertz_Aufbau.png}
+            \caption{Schematischer Aufbau des Frank-Hertz-Versuchs. \cite{Leifi_Aufbau_Hertz}}
+            \label{fig:Hertz_Aufbau}
+    \end{wrapfigure}
+            Während die Elektronen den Zylinder passieren, stoßen sie mit den Atomen des Quecksilber-Gases zusammen und verlieren dabei einen Teil ihrer Energie. Ist die kinetische Energie eines Elektrons geringer als die Anregungsenergie der äußersten Elektronen von \texttt{Hg}, so stoßen diese ausschließlich elastisch und die gemessene Strom $I_A$ ist proportional zu Beschleunigungsspannung $U_1$. Erreicht die kinetische Energie eines Elektrons jedoch die Anregungsenergie von \texttt{Hg}, so stößt es unelastisch und verliert dabei seine gesamte kinetische Energie. Im Mittel bleibt das Quecksilber-Atom für die Lebensdauer $\tau$ im angeregten Zustand bevor die aufgenommene Energie wieder als Strahlung emittiert wird und das Atom erneut angeregt werden kann. Während der gemessene Strom $I_A$ grundsätzlich proportional zur Beschleunigungsspannung $U_1$ ansteigt, erreicht $I_A(U_1)$ immer dann ein lokales Maximum, wenn die Elektronen ein Vielfaches der Anregungsenergie besitzen und aufgrund von wiederholten Stoßanregungen den Auffänger nicht erreichen können. \\
+    Zu Beginn des Versuchs wurde die Franck-Hertz-Röhre an das dafür entworfene Netzgerät angeschlossen, an welchem sich die Temperatur $T$ in der Röhre, die maximale Beschleunigungsspannung $U\sub{1,max}$ und die Bremsspannung $U_2$ analog einstellen ließen. Während der Ofen auf $T = \SI{165}{\degree C}$ vorheizte, wurden nun die Beschleunigungsspannung $U_1$ und die zum gemessenen Strom $I_A$ proportionale Spannung $U_A$ mithilfe eines Cassy-Moduls am Computer eingelesen und vom Mess-Programm \enquote{Franck-Hertz} aufgenommen. Durch Betätigung des Knopfes \enquote{Start/Stopp} am Netzgerät sowie der Taste \enquote{Messung starten} am Computer führte der Aufbau vollautomatisch die Messung $U_A(U_1)$ für $U_1 \in \{ \SI{0}{V}, U\sub{1,max} \}$ durch. \\
+    
+    Während die Franck-Hertz-Röhre technisch dazu in der Lage ist, Beschleunigungsspannungen bis hin zu $U_1 = \SI{60}{V}$ zu leisten, so ist würde eine derart hohe Spannung ein Durchzünden der Röhre und eine Beschädigung des Aufbaus zur Folge haben \cite{P401_Praktikumsanleitung}. Um dies zu vermeiden wurde $U\sub{1, max}$ daher zunächst von $\SI{30}{V}$ in Schritten von $\SI{2}{V}$ stetig erhöht, bis bei einer maximalen Beschleunigungsspannung von $U\sub{1, max} = \SI{37}{V}$ ein sicherer und außreichend großer Messbereich für den nachfolgenden Versuch identifiziert wurde.   
+
 
 \subsection{Messung unter variabler Bremsspannung $U_2$}
-    \begin{itemize}
-        \item Spektrum mit Gauß fitten
-        \item Maxima, Halbwertsbreiten und $\Delta U$ bestimmen
-        \item Einfluss von $U_2$ diskutieren
-    \end{itemize}
+    Mit dem nun geeichten Messbereich wurde nun bei einer Ofentemperatur von  $T = \SI{165 +- 1}{\degree C}$ eine Messreihe für vier verschiedene Bremsspannungen $U_2 \in \{ \SI{2}{V}, \SI{2.5}{V}, \SI{3.0}{V}, \SI{3.5}{V} \}$ durchgeführt um die Abhängigkeit zwischen den Positionen der lokalen Maxima und der Bremsspannungen zu ermitteln. 
+    
+    \needspace{6cm}
+    \begin{wrapfigure}{l}{0.45\textwidth}
+            \centering
+            \includegraphics[width=\linewidth]{figs/Bremsspannungen.jpg}
+            \caption{Qualitative Darstellung der Messreihen für variale Bremsspannungen $U_2$ bei konstanter Temperatur $T = \SI{165}{\degree C}$. }
+            \label{fig:Hertz_Bremsspannungen}
+    \end{wrapfigure}
+    
+    Abbildung \ref{fig:Hertz_Bremsspannungen} zeigt die Anodenspannugskurve $U_A(U_1)$ für verschiedene Bremsspannungen $U_2 \ll U_1$. Wie erwartet zeigt die Einhüllende jeder Messreihe eine Proportionalität zwischen Beschleunigungsspannung und der Zählrate an Elektronen am Auffänger. Je höher die Beschleunigungsspannung $U_1$ ist, desto mehr kinetische Energie besitzen die Elektronen und desto wahrscheinlicher ist es, dass diese trotz elastischer Stöße und Energieverluste das Gegenfeld überwinden und den Auffänger erreichen. Der Erwartung entspricht ebenfalls, dass die Spannungskurve eine äquidistante Verteilung von lokalen Maxima aufweist, wobei die Distanz zwischen je zwei Maxima mit der Anregungsenergie $\Delta E$ des Quecksilber-Übergangs $6S \rightarrow 6P$ assoziiert wird. Es ist deutlich zu sehen, dass je höher die Bremsspannung $U_2$ gewählt wird, je weniger Elektronen besitzen die nötige Energie um das zugehörige Gegenfeld zu überwinden. Die Position der Maxima ist weitgehend unabhängig von der gewählten Bremsspannung $U_2$, da diese lediglich eine Skalierung den Spannungsgkurve darstellt. \\
+    
+    Um quantitative Aussagen aus den gemessenen Daten zu ziehen wurde nun eine Gaußsche Glockenkurve mit Mittelwert $\mu$, Breite $\sigma$ und Amplitude $A$ je in einem kleinen Bereich um das jeweilige Maximum angepasst, wobei die Gesamt-Fitfunktion $F(U_1)$ als Summe der einzelnen Fitfunktionen $f_i (U_1)$ approximiert wurde:
+    \begin{align} \label{eq:Fitfunktion}
+        f_i(U_1) \coloneqq A \cdot \exp{\left(-\frac{1}{2} \left( \frac{x - \mu}{\sigma} \right)^2 \right)} \qquad \qquad
+        F(U_1) \coloneqq \sum_i^6{f_i(U_1)} \text{ .}
+    \end{align}
+    
+    Die aufgenommenen Daten sowie die daran angepassten Fitfunktionen (Anhang Abb. \ref{fig:Hertz_Daten+Fitfunktionen}) stimmen optisch weitgehend überein, weichen jedoch an den Minima mehrfach ab. Grund dafür ist, dass die unterliegende Proportionalität zwischen Beschleunigungsspannung $U_1$ und Messrate von Elektronen $U_A$ eine Asymmetrie im Funktionsverlauf hervorruft. Während die Unsicherheiten mithilfe von Gaußscher Fehlerfortpflanung bestimmt wurden, so unterschätzen diese aufgrund der Asymmetrie den tatsächlichen Unsicherheiten methodisch und können daher nicht herangezogen werden. Als empirische Schätzung für die Streuung der Abstände $\Delta x \coloneqq \mu_{n+1} - \mu_n$ benachbarter Maxima wird daher die \textit{korrigierte Stichprobenvarianz} verwendet:
+    \begin{align}
+        \langle \Delta x \rangle = \frac{1}{N} \sum_i^N{\Delta x_i} \qquad \qquad
+        \langle \Delta x \rangle \sub{err} = \left(  \frac{1}{N-1}  \sum_i^N ( \langle \Delta x \rangle - x_i  )  \right)^{1/2} \text{ .}
+    \end{align}
+    Die bestimmten Fitparameter sowie die Abstände $\Delta x$ benachbarter Maxima lassen sich in Abbildung \ref{tab:Hertz_Fitparameter} nachlesen und es ist zu erkennen, dass die mittleren Abstände zwischen je zwei Maxima unabhängig von der verwendeten Bremsspannung $U_2$ innerhalb der $1\sigma$-Umgebung übereinstimmen. 
+    \begin{table}[H]
+        \centering
+        \begin{tabular}{|c|c|c|c|c|} \hline
+            $U_2$ [$\unit{V}$]                      & \num{2 +- 0.1} & \num{2.5 +- 0.1} & \num{3 +- 0.1} & \num{3.5 +- 0.1}  \\ \hline
+            $\langle \Delta x \rangle$ [$\unit{V}$] & \num{4.88(13)} & \num{4.90(13)} & \num{4.90(14)} & \num{4.92(12)} \\ \hline
+        \end{tabular}
+        \caption{Mittlere Distanzen benachbarter Maxima in Abhängigkeit von der Bremsspannung $U_2$.}
+        \label{tab:Hertz_delta-x_U2}
+    \end{table}
+    Bei genauerer Betrachtung fällt auf, dass die Breite der Maxima $\sigma$ mit steigender Bremsspannung sinkt. Dies kann jedoch durch den einhergehenden Abfall der Amplitude $A$ erklärt werden, da die nach der Definition in Gleichung \eqref{eq:Fitfunktion} $\sigma$ bei geringen Amplituden ebenfalls geringer ausfällt.
     
 \subsection{Messung unter variabler Temperatur $T$}
-    \begin{itemize}
-        \item Spektrum mit Gauß fitten
-        \item Maxima, Halbwertsbreiten und $\Delta U$ bestimmen
-        \item Einfluss von $T$ diskutieren
-    \end{itemize}
+    Im nächsten Versuchsteil wurde nun die Abhängigkeit der Spannungskurve $U_A(U_1)$ bei konstanter Bremsspannung $U_2 = \SI{2 +- 0.1}{V}$ von verschiedenen Ofentemperaturen $T \in \{ \SI{165}{\degree C}, \SI{170}{\degree C}, \SI{175}{\degree C}, \SI{181}{\degree C} \}$ gemessen, um dessen Einfluss abzuschätzen.
+    
+    \needspace{5cm}
+    \begin{wrapfigure}{l}{0.5\textwidth}
+            \centering
+            \includegraphics[width=\linewidth]{figs/Temperatures.jpg}
+            \caption{Qualitative Darstellung der Messreihen für variale Temperatur $T$ bei konstanter Bremsspannung $U_2 = \SI{2 +- 0.1}{V}$. }
+            \label{fig:Hertz_Temperatures}
+    \end{wrapfigure}
+    
+    Abbildung \ref{fig:Hertz_Temperatures} weist hohe Ähnlichkeit mit vorheriger Betrachtung der variablen Bremsspannung (Abb. \ref{fig:Hertz_Bremsspannungen}) auf, nur, dass die Verringerung der Spannungsamplitude mit einer Erhöhung der Ofentemperatur $T$ einhergeht. Dies enspricht insofern der Erwartung, dass eine höhere Ofentemperatur $T$ in Verbindung mit einer höheren  kinetischen Energie im Quecksilber-Gas steht und somit die Kollisionswahrscheinlichkeit von Elektronen mit Gas-Atomen erhöht. Wahrscheinlicher ist auch, dass ein Elektron nun elastisch an einem energetischen Quecksilberatom streut und dadurch den Auffänger nicht erreicht. In Abbildung \ref{fig:Hertz_Temperatures} liegen die Kurven hohe Temperaturen überraschen nah beieinander, was vermutlich darauf zurückzuführen ist, dass bei den letzten Messungen kürzer gewartet wurde, ob der Ofen thermisches Gleichgewicht erreicht hatte. Die Positionen der Maxima $\mu$ sind weitgehend unabhängig von der Ofentemperatur, da diese immer genau dann erreicht werden, wenn die Anregungsenergie erreicht wird. Da kinetische Energie im Gas ist jedoch dafür verantwortlich, dass durch den Dopplereffekt auch Elektronen mit (im Laborsystem) deutlich geringer oder größerer Energie als die Anregungsenergie eine Stoßanregung erzeugen können. Die statistische Natur der Atom-Elektron-Interaktion sowie der Doppler-Effekt sind Ursachen für den überraschend kontinuierlichen Verlauf der Messkurven trotz der diskreten Anregungsenergie-Niveaus. Experimentell kann dieser Effekt durch die beobachtbare Verbreiterung der angepassten Gauß-Glocken bestätigt werden (vgl. $\sigma(T)$ in Abb. \ref{tab:Hertz_Fitparameter}). \\
+    
+    \begin{figure}[H]
+        \centering
+        \begin{minipage}{0.5\textwidth}
+            \includegraphics[width=\linewidth]{figs/Druckkurve.jpg}
+            \caption{Funktionale Abhängigkeit des Drucks $p$ in $\unit{Torr}$ in der Franck-Hertz-Röhre von dem Temperatur $T$ in $\unit{K}$.  }
+            \label{fig:Hertz_Druckkurve}
+        \end{minipage}
+        \hspace{0.3cm}
+        \begin{minipage}{0.45\textwidth}
+            Die Kollisions-Wahrscheinlichkeit der Elektronen im Quecksilber-Gas lässt sich ebenfalls durch den Druck $p(T)$ als Funktion der Temperatur beschreiben. Abbildung \ref{fig:Hertz_Druckkurve} zeigt, dass der Druck $p$ über eine Temperaturänderung von weniger als $\SI{100}{\degree C}$ bereits um eine ganze Oktave ansteigt und damit sehr sensibel auf Temperatur-Änderungen reagiert: \cite{P401_Praktikumsanleitung}
+            \begin{align}
+                \log{(p)} = 10.55 - 3333/T - 0.85 \log{(T)} \text{ .}  
+            \end{align}    
+        \end{minipage}
+    \end{figure}
+    Auch hier sind die Maxima äquidistant innerhalb der $1 \sigma$-Umgebung:
+    \begin{table}[H]
+        \centering
+        \begin{tabular}{|c|c|c|c|c|} \hline
+            $T$ [$\unit{\degree C}$]                & \num{165 +- 1} & \num{170 +- 1} & \num{175 +- 1} & \num{181 +- 1}  \\ \hline
+            $\langle \Delta x \rangle$ [$\unit{V}$] & \num{4.88(13)} & \num{4.87(11)} & \num{4.77(11)} & \num{4.76(14)} \\ \hline
+        \end{tabular}
+        \caption{Mittlere Distanzen benachbarter Maxima in Abhängigkeit von der Temperatur $T$.}
+        \label{tab:Hertz_delta-x_T}
+    \end{table}
 
 \subsection{Ergebnisse}
-    \begin{itemize}
-        \item $\Delta E$ Vergleich Literaturwert
-        \item Einfluss Wirkungsquerschnitt diskutieren
-        \item Warum keine scharfen Einbrüche in Anodenstrom?
-        \item Warum kleines Temperaturintervall bei Hg?
-        \item Zusammenhang mit konkreten Hg-Übergängen
-        \item Zusammenhang von Hg-Gasdruck und Temperatur
-    \end{itemize}
-
-
+    Wie bereits diskutiert ist anzunehmen, dass alle Messungen der Abstände benachbarter Maxima weitgehend unabhängige Stichproben derselben physikalischen Größe sind. Unter Verwendung der korrigierten Stichprobenvarianz berechnet sich also der gemessene Mittelwert zu
+    \begin{align}
+        \langle x \rangle = \SI{4.86 +- 0.13}{V}
+    \end{align}
+    Die zugehörige Energie eines Elektrons, welches diese Spannung als Anregungsenergie $\Delta E$ an ein Gas-Atom abgibt, ist folglich
+    \begin{align}
+        \Delta E = e \cdot \Delta x = \SI{4.86 +- 0.13}{eV} \quad \text{,}
+    \end{align}
+    wobei $e$ die Elektronenladung ist. Die beobachtete Anregungsenergie ist in Wirklichkeit jedoch eine Komposition von verschiedenen möglichen Übergängen, welche in der Literatur bekannt sind:
+    \begin{table}[H]
+        \centering
+        \begin{tabular}{|c|c|c|c|c|c|} \hline
+            Anregungsniveau (Term) &  $6^3 P_0 $ & $6^3 P_1 $ & $6^3 P_2 $ & $6^1 P_1 $ & $6^3 S_0 $ \\ \hline
+            Anregungsenergie [$\unit{eV}$] & \num{4.67} & \num{4.89} & \num{5.46} & \num{6.70} & \num{7.73} \\ \hline
+        \end{tabular}
+        \caption{Anregungsniveaus und deren Energien relativ zu $6^1 S_0$. \cite{NIST_Hg_Niveaus}}
+    \end{table}
+    Beim Vergleich der experimentell bestimmten mittleren Anregungsenergie $\Delta E$ mit den möglichen Übergängen von neutralem Quecksiber fällr auf, dass viele Energieniveaus zu hoch liegen um substanziell zur beobachteten Amplitude beizutragen. Die größten Übereinstimmungen sind mit $2 \sigma$ bei den Übergängen $6^1 S_0 \rightarrow 6^3 P_0$  und $6^1 S_0 \rightarrow 6^3 P_1$ zu beobachten, welche in erster Ordnung durch die Spinänderung $\Delta S \neq 0$ unterdrückt werden. 
     \begin{figure}[H]
         \centering
         \begin{subfigure}{0.4\textwidth}
             \includegraphics[width=\linewidth]{figs/Hertz_Termdiagramm_Hg.png}
             \caption{Vereinfachtes Hg-Termschema. \cite{Hertz_Termschema_Hg-Abb}}
+            \label{fig:Hertz_Termschema}
         \end{subfigure}
         \hspace{1cm}
         \begin{subfigure}{0.45\textwidth}
             \includegraphics[width=\linewidth]{figs/Hertz_Wirkungsquerschnitte.png}
-            \caption{Totaler Wirkungsquerschnitt von Hg für Elektronenstoßanregung. \cite{Hertz_Wirkungsquerschnitt-Abb}}
+            \caption{Totaler Wirkungsquerschnitt von Hg für Elektronenstoßanregung von $ 6^1 S_0$ nach (1) $ 6^3 P_0$, (2) $ 6^3 P_1$, (3) $ 6^3 P_2$, (4) $ 6^1 P_1$. \cite{Hertz_Wirkungsquerschnitt-Abb}}
+            \label{fig:Hertz_Wirkungsquer}
         \end{subfigure}
         \caption{}
     \end{figure}
+    Bezieht man nun jedoch auch den totalen Wirkungsquerschnitt von Hg in Abhängigkeit der Elektronenenergie $E$ (Abb. \ref{fig:Hertz_Wirkungsquer}) ein, so zeigt sich, dass der theoretisch wahrscheinlichere Übergang $6^1 S_0 \rightarrow 6^1 P_1$ erst bei Energien $E \geq \SI{7}{eV}$ verfügbar wird und dementsprechend nur gering beiträgt. Die empirisch dominierenden Übergänge sind gleichzeitig die Übergänge, welche bei den geringsten Energien verfügbar werden, das heißt, deren Wirkungsquerschnitt am frühesten ansteigt. Dabei besitzt der Übergang nach $ 6^3 P_1$ eine deutlich größere Effektive Fläche als der Übergang nach $ 6^3 P_0$, was wiederum erklärt, warum dessen Anregungsenergie mit dem empirisch bestimmmten Wert nahe zusammenfällt. Wie Abbildung \ref{fig:Hertz_Termschema} illustriert tragen grundsätzlich viele verschiedene Übergänge bei, doch die meisten davon können verworfen werden, da sie zu nieder-energetisch sind um die beobachteten $ \SI{4.86 +- 0.13}{eV}$ zu erklären. \\
+    
+    Der Franck-Hertz-Versuch mit \texttt{Hg} kann aufgrund seines sensiblen Druck-Temperatur-Verhaltens nur in einem verhältnismäßig geringen Temperaturintervall durchgeführt werden, denn bereits bei einer Ofentemperatur von $T = \SI{181}{\degree C}$ verringerte sich der Kontrast der Maxima erheblich. Dieser Effekt kann nur begrenzt durch Gegenregeln der Beschleunigungspannung $U_1$ aufgehoben werden, da bei noch höheren Energie das Quecksilbergas ionisiert wird. 
+    
+ 
+ 4.856285714285714 +- 0.12963944829650362

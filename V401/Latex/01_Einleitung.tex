@@ -1,7 +1,34 @@
 \section{Einleitung}
     Der nachfolgende Versuch beschäftigt sich mit Anregungszuständen in Atomen und ist dabei in zwei Teile unterteilt: \\
     
-    Im Teil \uproman{1} wird der normale Zeeman-Effekt nachgewiesen, welcher zum Verständnis der magnetischen Moments eines Atoms historisch von zentraler Bedeutung war. Der Versuch wird an einer Cadmiumlampe durchgeführt, welche sich jeweils transversal oder longitudinal im Magnetfeld befindet und dessen Übergänge mithilfe eines Fabry-Perot-Etalons untersucht werden. Ziel dieses Versuchs ist der Nachweis der Übergänge $^1 D_2 \rightarrow ^1 P_1$  in Form von $\pi$, $\sigma^+$ und $\sigma^-$ Strahlung sowie deren Polarisationen.  \\
+    Im Teil \uproman{1} wird der normale Zeeman-Effekt nachgewiesen, welcher zum Verständnis der magnetischen Moments eines Atoms historisch von zentraler Bedeutung war. Der Versuch wird an einer Cadmiumlampe durchgeführt, welche sich jeweils transversal oder longitudinal im Magnetfeld befindet und dessen Übergänge mithilfe eines Fabry-Perot-Etalons untersucht werden. Ziel dieses Versuchs ist der Nachweis der Übergänge $5^1 D_2 \rightarrow 5^1 P_1$  in Form von $\pi$, $\sigma^+$ und $\sigma^-$ Strahlung sowie deren Polarisationen.  \\
     
-    Im Teil \uproman{2} wird der Frank-Hertz-Versuch mit Quecksilber (\texttt{Hg}) durchgeführt. Mit diesem belegten James Franck und Gustav Hertz die Existenz von diskreten Energieniveaus in Atomen und gewannen dafür 1925 einen Nobelpreis. In diesem Versuchs werden Elektronen durch Quecksilber-Gas beschleunigt, an welchem jene elastisch streuen. Erreichte die kinetische Energie eines Elektron jedoch die Anregungsenergie von Quecksilber, so streut jenes inelastisch und ein Einbruch im Elektronenstrom wird beobachtbar. \cite{P401_Praktikumsanleitung}
+    Im Teil \uproman{2} wird der Frank-Hertz-Versuch mit Quecksilber (\texttt{Hg}) durchgeführt. Mit diesem belegten James Franck und Gustav Hertz die Existenz von diskreten Energieniveaus in Atomen und gewannen dafür 1925 einen Nobelpreis. In diesem Versuchs werden Elektronen durch Quecksilber-Gas beschleunigt, an welchem jene elastisch streuen. Erreichte die kinetische Energie eines Elektron jedoch die Anregungsenergie von Quecksilber, so streut jenes inelastisch und ein Einbruch im Elektronenstrom wird beobachtbar \cite{P401_Praktikumsanleitung}. Ziel dieses Versuchs ist die Messung der Anregungsenergien $6^1 S_0 \rightarrow 6P$ von Quecksilber bei variierender Temperatur $T$ und Brems-Spannung $U_2$. \\
     
+\subsection{Atomare Übergänge}
+    
+    Elektrischen Übergänge in Atomen beruhen im nicht-relativistischen Grenzfall auf dem Hamiltonian $\hat{H}$, welcher sich aus einem Basis-Hamiltonian $\hat{H}_0$ sowie der Spin-Orbit-Kopplung $\hat{H}_{LS}$ und der Magnetfeld-Kopplung $\hat{H}_B$ zusammensetzt:
+    \begin{align}
+        \hat{H} = \hat{H}_0 + \hat{H}_{SL} + \hat{H}_B 
+                = \hat{H}_0 + W(r) \cdot \hat{\bm{L}} \hat{\bm{S}} 
+                + \hat{\bm{\mu}} \cdot \bm{B} 
+    \end{align}
+    Hierbei beschreibt $\hat{\bm{L}}$ den Drehimpuls, $\hat{\bm{S}}$ den Spin und $\hat{\bm{\mu}} = \gamma (\hat{\bm{L}} + g_s \hat{\bm{S}})$ das magnetische Moment des Atoms. Ohne äußeres Magnetfeld $\bm{B}$ entsteht eine Kopplung von $\hat{\bm{L}}$ und $\hat{\bm{S}}$ zum Gesamtdrehimpuls $\hat{\bm{J}} = \hat{\bm{L}} + \hat{\bm{S}}$ und das System wird durch die Quantenzahlen $(j,m_j,s,l)$ eindeutig beschreiben. Die Energieniveaus $(j, m_j)$ sind dabei $(2j+1)$-fach entartet und hängen ausschließlich von $j$ ab. Legt man nun ein schwaches Magnetfeld $\bm{B}$ an, so induziert die Magnetfeld-Kopplung eine Aufhebung der Entartung, indem es die Energieniveaus um $\Delta E(m_j)$ verschiebt:
+    \begin{align}
+        \Delta E(m_j)   = - \langle \psi | \hat{\bm{\mu}}\sub{eff} \cdot \bm{B} | \psi \rangle 
+                        = - g_j \gamma \hbar m_j B_z
+                        = - g_j \mu_B m_j B_z
+    \end{align}
+    Dabei bezeichnet $g_j$ den Lande-Korrekturfaktor, $\mu_B = \hbar \gamma$ das Bohr'sche Magneton und es wurde angenommen, dass die z-Achse des Gesamtdrehimpulses $\hat{\bm{J}}$ parallel zum homogenen Magnetfeld $\bm{B}$ liegt \cite{Demtröder_4}. Im Versuchsteil \uproman{1} wird die Zeeman-Aufspaltung der $\SI{643.8}{nm}$-Cadmium-linie betrachtet, einem Atom mit Gesamtspin $S = 0$. Aufgrund des verschwindenen Gesamtspins vereinfacht sich die Energieverschiebung mit $\hat{\bm{J}} = \hat{\bm{L}}$ zum normalen Zeeman-Effekt $g_j = 1$ und es gilt:
+    \begin{align}
+        \Delta E(m_l)   = - \mu_B m_l B_z
+    \end{align}
+    Die Übergangswahrscheinlichkeit für elektrische Dipolübergänge sind dabei durch die Auswahlregeln gegeben.
+    \begin{align}
+        \Delta j \in \{ 0, \pm 1 \} \qquad 
+        \Delta m_j \in \{ 0, \pm 1 \} \qquad 
+        \Delta l \in \{ \pm 1 \} \qquad
+        \Delta S = 0 
+    \end{align}
+    Erfüllt ein Übergang eine oder mehrere dieser Bedingungen nicht, so kann dieser nur in höheren Ordnungen erlaubt sein und trägt somit nur schwach zum beobachteten Spektrum bei. \\
+    Im Versuchsteil \uproman{2} wird ein Quecksilber-Gas angeregt, welches sowohl Singulett- $(S = 0)$ als auch Triplett-Zustände $(S = 1)$ einnehmen kann. Theoretisch wird aufgrund der Auswahlregeln erwartet, dass die Singulett-Übergänge mit $\Delta S = 0$ gegenüber den Triplett-Übergangen mit $\Delta S = 1$ stark dominieren.
